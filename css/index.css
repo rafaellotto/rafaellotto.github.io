@@ -1,0 +1,8 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#my-photo {
+  border-radius: 50% 0;
+  box-shadow: 0px 5px 10px gray;
+}
