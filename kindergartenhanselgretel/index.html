@@ -7,75 +7,65 @@
     <title>Kindergarten Hänsel und Gretel</title>
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-
-    <style>
-      .full-view {
-        margin-top: 10vh;
-      }
-
-      .figure figcaption {
-        color: black;
-        background-color: #28a745;
-        font-size: 18px;
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-success">
-    <div class="container-fluid">
-      <div class="row full-view align-items-center">
-        <div class="col text-center">
-          <h1>Kindergarten Hänsel und Gretel</h1>
+  <body class="green">
+    <div class="container">
+      <div class="row full-view">
+        <div class="col s12">
+          <h1 class="center-align">Kindergarten Hänsel und Gretel</h1>
         </div>
 
-        <div class="w-100"></div>
-
-        <div class="col text-center">
-          <h2>Escolha o idioma | Bitte die Sprache wäen</h2>
+        <div class="col s12">
+          <h2 class="center-align flow-text">
+            Escolha o idioma | Bitte die Sprache wäen
+          </h2>
         </div>
 
-        <div class="w-100"></div>
-
-        <div class="col my-5">
-          <div class="row text-center">
-            <div class="col">
-              <a href="./pt/index.html" title="Ir para o site em português.">
-                <figure class="figure ">
-                  <img
-                    src="./img/br.png"
-                    class="figure-img img-fluid rounded"
-                    alt="Bandeira do Brasil"
-                  />
-                  <figcaption class="figure-caption text-right">
-                    Bem-vindo(a)! &#8594;
-                  </figcaption>
-                </figure>
-              </a>
+        <div class="col s12">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./img/br.png" alt="Bandeira do Brasil" />
+                  <a
+                    class="btn-floating halfway-fab waves-effect waves-light black"
+                    title="Ir para o site em português"
+                  >
+                    <i class="material-icons">arrow_forward</i>
+                  </a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Bem-vindo(a)!</span>
+                </div>
+              </div>
             </div>
-            <div class="col">
-              <a href="./de/index.html" title="Gehe zur deutschen Seite.">
-                <figure class="figure">
-                  <img
-                    src="./img/de.png"
-                    class="figure-img img-fluid rounded"
-                    alt="Bandeira da Alemanha"
-                  />
-                  <figcaption class="figure-caption text-right">
-                    Willkommem! &#8594;
-                  </figcaption>
-                </figure>
-              </a>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./img/de.png" alt="Bandeira da Alemanha" />
+                  <a
+                    class="btn-floating halfway-fab waves-effect waves-light black"
+                    title="Gehe zur deutschen Seite"
+                  >
+                    <i class="material-icons">arrow_forward</i>
+                  </a>
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Willkommem!</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="w-100"></div>
-        <div class="col text-center">
-          <img src="./img/coracao.gif" alt="Coração" />
-        </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
