@@ -30,17 +30,22 @@
         padding-top: 64px;
         min-height: 100vh;
       }
+      #home {
+        background-image: url("./img/bemvindo-mobile.jpg");
+        background-position: center right;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #home h2 {
+        margin-top: 10rem;
+      }
       h2 {
         text-align: center;
-      }
-      #fotos {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, auto));
-        grid-gap: 15px;
       }
       #fotos img {
         border-radius: 10px;
         width: 100%;
+        margin: 10px 0;
       }
       #floating-button-ul {
         width: 100px;
@@ -60,6 +65,17 @@
         align-items: center;
         justify-content: center;
       }
+      @media (min-width: 993px) {
+        .brand-logo {
+          margin-left: 10px;
+        }
+        #home {
+          background-image: url("./img/bemvindo-desktop.jpg");
+        }
+        #home h2 {
+          margin-top: 5rem;
+        }
+      }
     </style>
   </head>
   <body id="inicio">
@@ -68,8 +84,13 @@
     <nav>
       <div class="nav-wrapper">
         <a href="#" class="brand-logo black-text">
-          <img src="./img/coracao.gif" height="60" alt="Logo" class="left" />
-          Kindergarten Hänsel und Gretel
+          <img
+            href="/"
+            src="./img/Logo_HanselUndGretel_Site_v2.jpg"
+            height="60"
+            alt="Logo"
+            class="left"
+          />
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#inicio" class="waves-effect waves-red">Início</a></li>
@@ -135,86 +156,63 @@
       </ul>
     </div>
 
-    <section>
-      <div class="row">
-        <div class="col s12">
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="./img/element5-digital-352043-unsplash.jpg" />
-                <div class="caption center-align">
-                  <h3 class="black-text">
-                    Seja bem-vindo(a)<br />Kindergarten Hänsel und Gretel
-                  </h3>
-                  <h5 class="black-text light">
-                    Escola para crianças até 5 anos
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <img src="./img/john-doyle-1199223-unsplash.jpg" />
-                <div class="caption right-align">
-                  <h3 class="black-text">
-                    Texto da direita
-                  </h3>
-                  <h5 class="black-text light">
-                    Pequena mensagem
-                  </h5>
-                </div>
-              </li>
-              <li>
-                  <img src="./img/markus-spiske-680198-unsplash.jpg" />
-                  <div class="caption left-align">
-                    <h3>
-                      Texto da esquerda
-                    </h3>
-                    <h5 class="light">
-                      Pequena mensagem
-                    </h5>
-                  </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <section id="home">
+        <h2>
+          Bem-vindo(a) ao <br />Kindergarten Hänsel und Gretel
+        </h2>
+        <p class="flow-text center-align">Desde 1988</p>
     </section>
     <section id="historia"><h2>História da escola</h2></section>
     <section id="objetivos"><h2>Objetivos e metodologia</h2></section>
     <section id="atividades"><h2>Atividades</h2></section>
     <section id="galeria">
       <div class="row">
-        <div class="col s12"><h2>Galeria de fotos</h2></div>
-        <div id="fotos" class="col s12">
-          <img
-            class="materialboxed"
-            src="http://lorempixel.com/800/450/nature"
-            alt="Exemplo de imagem de natureza"
-          />
-          <img
-            class="materialboxed"
-            src="https://lorempixel.com/800/450/nature"
-            alt="Exemplo de imagem de natureza"
-          />
-          <img
-            class="materialboxed"
-            src="https://lorempixel.com/800/450/nature"
-            alt="Exemplo de imagem de natureza"
-          />
-          <img
-            class="materialboxed"
-            src="https://lorempixel.com/800/450/nature"
-            alt="Exemplo de imagem de natureza"
-          />
-          <img
-            class="materialboxed"
-            src="https://lorempixel.com/800/450/nature"
-            alt="Exemplo de imagem de natureza"
-          />
-          <img
-            class="materialboxed"
-            src="https://lorempixel.com/800/450/nature"
-            alt="Exemplo de imagem de natureza"
-          />
+        <div class="col s12">
+          <h2>Galeria de fotos</h2>
+          <div id="fotos" class="row">
+            <div class="col s12 m6 l4">
+                <img
+                class="materialboxed"
+                src="http://lorempixel.com/800/450/nature"
+                alt="Exemplo de imagem de natureza"
+              />
+            </div>
+            <div class="col s12 m6 l4">
+                <img
+                class="materialboxed"
+                src="http://lorempixel.com/800/450/nature"
+                alt="Exemplo de imagem de natureza"
+              />
+            </div>
+            <div class="col s12 m6 l4">
+                <img
+                class="materialboxed"
+                src="http://lorempixel.com/800/450/nature"
+                alt="Exemplo de imagem de natureza"
+              />
+            </div>
+            <div class="col s12 m6 l4">
+                <img
+                class="materialboxed"
+                src="http://lorempixel.com/800/450/nature"
+                alt="Exemplo de imagem de natureza"
+              />
+            </div>
+            <div class="col s12 m6 l4">
+                <img
+                class="materialboxed"
+                src="http://lorempixel.com/800/450/nature"
+                alt="Exemplo de imagem de natureza"
+              />
+            </div>
+            <div class="col s12 m6 l4">
+                <img
+                class="materialboxed"
+                src="http://lorempixel.com/800/450/nature"
+                alt="Exemplo de imagem de natureza"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -262,13 +260,8 @@
         var images = document.querySelectorAll(".materialboxed");
         var instances2 = M.Materialbox.init(images, {});
 
-        var sliders = document.querySelectorAll(".slider");
-        var instances3 = M.Slider.init(sliders, {
-          indicators: true,
-          height: 700,
-          duration: 500,
-          interval: 6000
-        });
+        var parallaxs = document.querySelectorAll(".parallax");
+        var instances3 = M.Parallax.init(parallaxs, {});
       });
     </script>
   </body>
