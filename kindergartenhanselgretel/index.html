@@ -70,6 +70,16 @@
         background-color: white;
         color: black;
       }
+      .phones {
+        text-align: center;
+      }
+      .phones a {
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        margin: 5px;
+        text-align: center;
+      }
       footer {
         min-height: 50vh;
         background-color: #212121;
@@ -231,14 +241,42 @@
       <div class="row">
         <div class="col s12">
           <h2>Contato</h2>
-
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d768.3571735520663!2d-46.6759436396053!3d-23.64220257712663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2bacf15542fddbb!2sKindergarten+H%C3%A4nsel+und+Gretel!5e0!3m2!1spt-BR!2sbr!4v1546928491060"
-            height="350"
-            frameborder="0"
-            style="border:0; width: 100%;"
-            allowfullscreen
-          ></iframe>
+          <div class="row" style="display: flex; align-items: center;">
+            <div class="col s12 m4">
+              <div class="row">
+                <i class="col s12 material-icons medium center-align">phone</i>
+                <div class="phones col s6">
+                  <a class="btn" href="tel:+551155489607" target="_blank"
+                    >+55 11 5548-9607</a
+                  >
+                </div>
+                <div class="phones col s6">
+                  <a class="btn" href="tel:+551155422266" target="_blank"
+                    >+55 11 5542-2266</a
+                  >
+                </div>
+                <div class="phones col s6">
+                  <a class="btn" href="tel:+5511983060706" target="_blank"
+                    >+55 11 98306-0706</a
+                  >
+                </div>
+                <div class="phones col s6">
+                  <a class="btn" href="tel:+5511985389727" target="_blank"
+                    >+55 11 98538-9727</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m8">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d768.3571735520663!2d-46.6759436396053!3d-23.64220257712663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2bacf15542fddbb!2sKindergarten+H%C3%A4nsel+und+Gretel!5e0!3m2!1spt-BR!2sbr!4v1546928491060"
+                height="350"
+                frameborder="0"
+                style="border:0; width: 100%;"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -270,9 +308,6 @@
 
         var images = document.querySelectorAll(".materialboxed");
         var instances2 = M.Materialbox.init(images, {});
-
-        var parallaxs = document.querySelectorAll(".parallax");
-        var instances3 = M.Parallax.init(parallaxs, {});
       });
       f;
     </script>
