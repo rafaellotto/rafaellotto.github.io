@@ -8,11 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Indie+Flower"
     />
     <style>
       body {
@@ -237,8 +233,8 @@
     </div>
 
     <section id="home">
-      <h2><span id="text-bemvindo">Bem-vindo(a) ao</span><br />Kindergarten Hänsel und Gretel</h2>
-      <p class="flow-text center-align"><span id="text-bemvindo2">Desde</span> 1988</p>
+      <h2><span id="textBemvindo">Bem-vindo(a) ao</span><br />Kindergarten Hänsel und Gretel</h2>
+      <p class="flow-text center-align"><span id="textBemvindo2">Desde</span> 1988</p>
     </section>
     <section id="historia">
       <div class="container">
@@ -522,20 +518,17 @@
         deutschMode = !deutschMode;
 
         document.querySelector("html").lang = deutschMode ? "de" : "pt-br";
+
         document.querySelector("#navFlag").src = deutschMode
           ? "./img/br.png"
           : "./img/de.png";
         document.querySelector("#buttonFlag").src = deutschMode
           ? "./img/br.png"
           : "./img/de.png";
-        document.querySelector("#text-bemvindo").innerHTML = deutschMode
-          ? "Willkommem bei"
-          : "Bem-vindo(a) ao";
-        document.querySelector("#text-bemvindo2").innerHTML = deutschMode
-          ? "Zeit"
-          : "Desde";
 
         var translations = {
+          textBemvindo: ["Willkommem bei", "Bem-vindo(a) ao"],
+          textBemvindo2: ["Zeit", "Desde"],
           nav1: ["Start", "Início"],
           nav2: ["Unsere Geschichte", "Nossa história"],
           nav3: ["Ziele und Methoden", "Objetivos e métodos"],
@@ -556,68 +549,29 @@
           objetivosText: [
             `<p class="flow-text">
               Der Kleinkindergarten "Hänsel und Gretel" hat sich zum Ziel gesetzt die Persönlichkeit des Kindes zu entwickeln. Es werden seine Phantasie und Kreativität gefördert, die die Grundlage für ein schöpferisch reiches Leben sind. (Montessori, Piaget, Vygotsky, Steiner, Rousseau)
-            </p>
-            <p class="flow-text">
+            </p><p class="flow-text">
               Ein freundschaftliches Zusammenleben ohne jede Konkurrenz soll verhüten, dass das Kind sich auf die eine oder andere Weise minderwertig fühlt. Jeder Wettbewerb beim Kleinkind fördert nicht seinen Ehrgeiz sondern bringt psychische Störungen. Das Kind muss zuerst seine Fähigkeiten kennen lernen und entwickeln. (Froebel, F; Sime, M.; Mussen, M. P.; Rousseau, J.)
-            </p>
-            <p class="flow-text">
+            </p><p class="flow-text">
               Mit Liebe und Freundschaft wird das Kind gelenkt damit es sich frei und unbeschwert fühlt. Das Prinzip ist Freiheit mit Grenzen, d. h. Disziplin und Respekt wo es erforderlich ist. (Rousseau; Niederle; Snyders, G; Froebel, F.). So erwirbt es Sicherheit und Selbstvertrauen. (Stender-Lavatelei, S.; Sime, M.; Rousseau, J.)
-            </p>
-            <p class="flow-text">
+            </p><p class="flow-text">
               Wir erziehen die Kinder damit sie in ihrem späteren Leben wirtschaftliche, kulturelle oder politische Führer werden und nicht nur "menschliche Hilfsmittel" bei der Erzeugung von Gewinn und folgsame Verbraucher (Konsumententyp). Mit 6 Jahren ist die Grundlage des weiteren Lebens geformt. (Jung, Piaget; Rousseau; Wallon)
-            </p>
-            <p class="flow-text">
+            </p><p class="flow-text">
               Wir singen, spielen, basteln mit den verschiedensten Materie, pflanzen, pflücken, backen, turnen und lenken das Kind (ästethische Elementarerziehung), damit es persönlich gefestigt in die Grundschule eintritt.
-            </p>
-            <p class="flow-text">
+            </p><p class="flow-text">
               Sprachen: Kinder lernen eine, zwei, drei oder mehr Sprachen auf natürliche und spontane Weise, nur durch Hören und Sprechen. Wir haben Kinder die mit drei-vier Jahren perfekt zwei oder drei Sprachen beherrschen. Und je kleiner und jünger die Kinder sind, desto plastischer und grösser ist die Lernfähigkeit einer Sprache. (Vygotsky) Im 'Hänsel und Gretel' werden alle Aktivitäten auf deutscher Sprache durchgeführt und gelenkt. Es wird während ganzen Zeit der Anwesenheit des Kindes nur Deutsch gesprochen.
             </p>`,
             `<p class="flow-text">
-              O Jardim de Infância 'Hänsel und Gretel' possui como meta
-              desenvolver a personalidade da criança. Fomenta-se sua fantasia e
-              criatividade que são a base para uma rica vida criadora e
-              realizadora. (Montessori, Piaget, Vygotsky, Steiner, Rousseau)
-            </p>
-            <p class="flow-text">
-              Uma convivência com amizade e sem concorrência, nessa faixa
-              etária, evita que a criança possa sentir-se inferior por um ou
-              outro motivo. Qualquer competição na primeira infância não
-              estimula a auto estima mas ao contrário, traz distúrbios
-              psícológicos. Primeiramente a criança precisa conhecer e
-              desenvolver suas habilidades. (Sime, M.; Mussen, M. P.; Rousseau,
-              J. J.; Froebel, F.)
-            </p>
-            <p class="flow-text">
-              Com amor e amizade a criança é orientada para sentir-se livre e
-              tranqüila, sem peso nem medos. O princípio é a liberdade regrada,
-              isto é, disciplina e respeito onde se faz necessário. (Rousseau;
-              Niederle; Froebel) Assim adquire segurança e auto confiança.
-              (Stender-Lavatelei, S.; Sime, M.; Rousseau, J. J.)
-            </p>
-            <p class="flow-text">
-              Educamos as crianças para que em sua vida futura possam ser
-              realizadores, líderes culturais, sociais, econômicos e políticos e
-              não se tornem simplesmente um 'recurso humano' para obtenção de
-              lucros e consumidores obedientes. Até seis anos foi formada a base
-              para toda sua vida. (Jung, Piaget; Rousseau; Wallon)
-            </p>
-            <p class="flow-text">
-              Cantamos, brincamos, fazemos muitos trabalhos artesanais para os
-              projetos com os mais diversos materiais, plantamos, colhemos,
-              fazemos bolachinhas, ginástica apropriada e dirigimos a criança
-              para que inicie a escola primária psiquicamente fortalecida e auto
-              confiante.
-            </p>
-            <p class="flow-text">
-              Crianças aprendem um, dois, três ou mais idiomas de uma maneira
-              natural e espontânea, somente ouvindo e falando. Temos crianças
-              que falam fluentemente dois a três idiomas aos 4 anos de idade.
-              Quanto menor e mais nova for a criança, tanto mais plástica é a
-              capacidade de aprendizagem de línguas. Os idiomas aprendidos
-              naturalmente na primeira infância são todos como maternos. No
-              Kindergarten Hänsel und Gretel, todas as atividades acontecem em
-              alemão.
-            </p>`],
+              O Jardim de Infância 'Hänsel und Gretel' possui como meta desenvolver a personalidade da criança. Fomenta-se sua fantasia e criatividade que são a base para uma rica vida criadora e realizadora. (Montessori, Piaget, Vygotsky, Steiner, Rousseau)
+            </p><p class="flow-text">
+              Uma convivência com amizade e sem concorrência, nessa faixa etária, evita que a criança possa sentir-se inferior por um ou outro motivo. Qualquer competição na primeira infância não estimula a auto estima mas ao contrário, traz distúrbios psícológicos. Primeiramente a criança precisa conhecer e desenvolver suas habilidades. (Sime, M.; Mussen, M. P.; Rousseau, J. J.; Froebel, F.)
+            </p><p class="flow-text">
+              Com amor e amizade a criança é orientada para sentir-se livre e tranqüila, sem peso nem medos. O princípio é a liberdade regrada, isto é, disciplina e respeito onde se faz necessário. (Rousseau; Niederle; Froebel) Assim adquire segurança e auto confiança. (Stender-Lavatelei, S.; Sime, M.; Rousseau, J. J.)
+            </p><p class="flow-text">
+              Educamos as crianças para que em sua vida futura possam ser realizadores, líderes culturais, sociais, econômicos e políticos e não se tornem simplesmente um 'recurso humano' para obtenção de lucros e consumidores obedientes. Até seis anos foi formada a base para toda sua vida. (Jung, Piaget; Rousseau; Wallon)
+            </p><p class="flow-text">
+              Cantamos, brincamos, fazemos muitos trabalhos artesanais para os projetos com os mais diversos materiais, plantamos, colhemos, fazemos bolachinhas, ginástica apropriada e dirigimos a criança para que inicie a escola primária psiquicamente fortalecida e auto confiante.
+            </p><p class="flow-text">
+              Crianças aprendem um, dois, três ou mais idiomas de uma maneira natural e espontânea, somente ouvindo e falando. Temos crianças que falam fluentemente dois a três idiomas aos 4 anos de idade. Quanto menor e mais nova for a criança, tanto mais plástica é a capacidade de aprendizagem de línguas. Os idiomas aprendidos naturalmente na primeira infância são todos como maternos. No Kindergarten Hänsel und Gretel, todas as atividades acontecem em alemão.</p>`],
           cognitivoHeading: ["Kognitiv", "Cognitivo"],
           cognitivoText: ["Fördern der Begriffsbildung, des logischen Denkens, der Wahrnehmungsfähigkeit durch orientierte Gruppenspiele, Tisch-, Höhr-, Seh- und Tastspiele.","Fomento à compreensão, ao pensamento lógico, à capacidade de perceber e distinguir através de jogos dirigidos em grupo, jogos de mesa, de tatear, de ouvir, de ver, etc."],
           motricidadeHeading: ["Handfertigkeit", "Motricidade"],
@@ -633,7 +587,8 @@
           naturezaHeading: ["Natur Erleben", "Natureza"],
           naturezaText: ["Tägliche Aufenthalte im Freien, naturwissenschaftliche Erlebnisse, zahlreiche Ausflüge in Parks, Naturschutzgebiete, Bauernhöfe, zoologischen Garten usw erwecken den Kindern Liebe zur Natur und das Gefühl der Notwendigkeit die Welt zu erhalten in der wir leben.", "Folguedos e brincadeiras diárias ao ar livre, vivências das ciências naturais, numerosas excursões incentivam o amor à natureza e o sentimento da necessidade da conservação do mundo em que vivemos."],
           musicaHeading: ["Musikalisch", "Música"],
-          musicaText: ["Spass am Singen wecken. Kinder lieben Musik und Singen. Singen trägt zu ihrer sozio-emotionalen, cognitiven und physischen Entwicklung auf verschiedene Arten bei: während sie singen nehmen sie an einer Gruppe Teil, steigern ihr Warnehmen von verschiedenen Tönen und Bewegungen (Tanz), lernen neue Worte und Konzepte, Rhytmen, Melodien und Reime. Wir singen Lieder die sich auf das Thema des Tages beziehen. Sie lernen ebenso den Gebrauch von Instrumenten wie Rasseln, Glöckchen, Tamburin, Triangeln. Wir singen in Gruppen aber auch einzeln.", "Crianças gostam de música e de canto. Cantar contribui de diversas maneiras para o desenvolvimento sócio-emocional, cognitivo e físico. Enquanto cantam, participam de um grupo, aumentam sua capacidade de percepção de diferentes sons e movimentos, apreendem palavras, conceitos e ritmos novos bem como novas melodias e poesias. Cantamos canções relativas ao projeto em estudo. Também aprendem o manuseio de instrumentos como triângulos, tamborins, chocalhos, reco-recos, guizos. Cantamos em grupos e solos."],
+          musicaText: ["Spass am Singen wecken. Kinder lieben Musik und Singen. Singen trägt zu ihrer sozio-emotionalen, cognitiven und physischen Entwicklung auf verschiedene Arten bei: während sie singen nehmen sie an einer Gruppe Teil, steigern ihr Warnehmen von verschiedenen Tönen und Bewegungen (Tanz), lernen neue Worte und Konzepte, Rhytmen, Melodien und Reime. Wir singen Lieder die sich auf das Thema des Tages beziehen. Sie lernen ebenso den Gebrauch von Instrumenten wie Rasseln, Glöckchen, Tamburin, Triangeln. Wir singen in Gruppen aber auch einzeln.",
+          "Crianças gostam de música e de canto. Cantar contribui de diversas maneiras para o desenvolvimento sócio-emocional, cognitivo e físico. Enquanto cantam, participam de um grupo, aumentam sua capacidade de percepção de diferentes sons e movimentos, apreendem palavras, conceitos e ritmos novos bem como novas melodias e poesias. Cantamos canções relativas ao projeto em estudo. Também aprendem o manuseio de instrumentos como triângulos, tamborins, chocalhos, reco-recos, guizos. Cantamos em grupos e solos."],
           linguisticoHeading: ["Sprachlich", "Linguístico"],
           linguisticoText: ["Sprache verstehen und freies Sprechen fördern, Sinn erkennen, durch Fingerspiele, Geschichten, Lieder; Bilder in Sprache umsetzen, usw.", "Entendimento dos idiomas e estimulação à livre manifestação oral. Reconhecimento do sentido, interpretação de gravuras em linguagem através, jogos de dedos, histórias, músicas e outros."],
         };
