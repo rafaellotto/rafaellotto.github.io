@@ -43,7 +43,11 @@
         bottom: 23px;
         background-color: white;
       }
-      #home, #historia, #objetivos, #atividades, #galeria {
+      #home,
+      #historia,
+      #objetivos,
+      #atividades,
+      #galeria {
         padding-top: 70px;
         min-height: 100vh;
       }
@@ -64,6 +68,10 @@
         font-size: calc(14px + 3.5vw);
         font-family: "Indie Flower", cursive;
       }
+      h3 {
+        font-size: calc(12px + 2vw);
+        margin: 10px 0;
+      }
       #fotos img {
         border-radius: 10px;
         width: 100%;
@@ -79,6 +87,21 @@
         background-color: white;
         color: black;
       }
+      .cards {
+        text-align: center;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .card {
+        display: inline-block;
+        margin: 10px;
+        width: 300px;
+      }
+      .card .card-content {
+        padding: 10px 24px;
+      }
       .phones {
         text-align: center;
       }
@@ -90,6 +113,9 @@
         width: 100%;
         text-align: center;
         font-size: 16px;
+      }
+      .phones a:hover {
+        background-color: lightgray;
       }
       footer {
         background-color: #212121;
@@ -206,9 +232,249 @@
       <h2>Bem-vindo(a) ao <br />Kindergarten Hänsel und Gretel</h2>
       <p class="flow-text center-align">Desde 1988</p>
     </section>
-    <section id="historia"><h2>Nossa história</h2></section>
-    <section id="objetivos"><h2>Objetivos e metodologia</h2></section>
-    <section id="atividades"><h2>Atividades</h2></section>
+    <section id="historia">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h2>Nossa história</h2>
+            <p class="flow-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              finibus, quam vel malesuada congue, quam ligula efficitur sapien,
+              eget porta diam odio ac mauris. Duis rutrum odio sem, sit amet
+              finibus mi accumsan eu. Donec rutrum, est condimentum fermentum
+              condimentum, neque ex porta lectus, a dictum erat odio et risus.
+              Vivamus at interdum diam, malesuada cursus urna. Etiam eu risus
+              neque. Duis vulputate tincidunt suscipit. Donec felis eros, dictum
+              in congue sit amet, imperdiet vel ipsum. Etiam feugiat dui justo,
+              non venenatis dolor mollis eu. Ut in nunc quis quam lacinia mollis
+              at et dui. Fusce aliquam congue porttitor. Vestibulum vitae enim
+              dui. Integer pretium iaculis sollicitudin.
+            </p>
+
+            <p class="flow-text">
+              Vivamus a placerat augue. Sed at nibh non elit facilisis molestie
+              nec eu felis. Praesent finibus, tellus quis pulvinar accumsan,
+              tellus turpis auctor leo, in luctus lacus libero ut tortor. Nulla
+              eget vestibulum nulla. Maecenas blandit aliquet commodo. Duis
+              hendrerit eu arcu vestibulum interdum. Suspendisse potenti. Donec
+              fermentum accumsan ligula, ac consequat magna ultrices eget.
+              Nullam condimentum eleifend odio, in faucibus ante semper vel. Nam
+              sit amet est fringilla, feugiat turpis tempor, maximus metus.
+              Vivamus sed mattis erat, vel ultrices mauris. Duis feugiat, nunc
+              non tincidunt maximus, nisi est porttitor purus, at cursus arcu
+              ipsum non massa.
+            </p>
+
+            <p class="flow-text">
+              Sed at lorem suscipit, suscipit enim ac, dignissim mauris.
+              Vestibulum consectetur eget felis vitae porta. Sed blandit orci
+              tincidunt lacus semper aliquam. Curabitur id bibendum augue, eu
+              venenatis nisi. Donec nunc justo, euismod id aliquam quis,
+              faucibus ac ante. Proin ac tortor gravida, auctor elit et, laoreet
+              augue. Mauris laoreet diam vel mi maximus tincidunt. Sed consequat
+              quis quam eu blandit. Sed in velit nisi. Donec id nisi et arcu
+              commodo rutrum. Curabitur faucibus fermentum placerat. Sed finibus
+              sapien eu enim ultrices, sit amet luctus enim auctor. Integer
+              venenatis sapien ac quam imperdiet, at imperdiet turpis mattis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="objetivos">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h2>Objetivos e metodologia</h2>
+            <p class="flow-text">
+              O Jardim de Infância 'Hänsel und Gretel' possui como meta
+              desenvolver a personalidade da criança. Fomenta-se sua fantasia e
+              criatividade que são a base para uma rica vida criadora e
+              realizadora. (Montessori, Piaget, Vygotsky, Steiner, Rousseau)
+            </p>
+
+            <p class="flow-text right-align">
+              Uma convivência com amizade e sem concorrência, nessa faixa
+              etária, evita que a criança possa sentir-se inferior por um ou
+              outro motivo. Qualquer competição na primeira infância não
+              estimula a auto estima mas ao contrário, traz distúrbios
+              psícológicos. Primeiramente a criança precisa conhecer e
+              desenvolver suas habilidades. (Sime, M.; Mussen, M. P.; Rousseau,
+              J. J.; Froebel, F.)
+            </p>
+
+            <p class="flow-text">
+              Com amor e amizade a criança é orientada para sentir-se livre e
+              tranqüila, sem peso nem medos. O princípio é a liberdade regrada,
+              isto é, disciplina e respeito onde se faz necessário. (Rousseau;
+              Niederle; Froebel) Assim adquire segurança e auto confiança.
+              (Stender-Lavatelei, S.; Sime, M.; Rousseau, J. J.)
+            </p>
+
+            <p class="flow-text right-align">
+              Educamos as crianças para que em sua vida futura possam ser
+              realizadores, líderes culturais, sociais, econômicos e políticos e
+              não se tornem simplesmente um 'recurso humano' para obtenção de
+              lucros e consumidores obedientes. Até seis anos foi formada a base
+              para toda sua vida. (Jung, Piaget; Rousseau; Wallon)
+            </p>
+
+            <p class="flow-text">
+              Cantamos, brincamos, fazemos muitos trabalhos artesanais para os
+              projetos com os mais diversos materiais, plantamos, colhemos,
+              fazemos bolachinhas, ginástica apropriada e dirigimos a criança
+              para que inicie a escola primária psiquicamente fortalecida e auto
+              confiante.
+            </p>
+
+            <p class="flow-text right-align">
+              Crianças aprendem um, dois, três ou mais idiomas de uma maneira
+              natural e espontânea, somente ouvindo e falando. Temos crianças
+              que falam fluentemente dois a três idiomas aos 4 anos de idade.
+              Quanto menor e mais nova for a criança, tanto mais plástica é a
+              capacidade de aprendizagem de línguas. Os idiomas aprendidos
+              naturalmente na primeira infância são todos como maternos. No
+              Kindergarten Hänsel und Gretel, todas as atividades acontecem em
+              alemão.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="atividades">
+      <div class="container">
+        <div class="col s12"><h2>Atividades</h2></div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-image"><img src="./img/musica.jpg" alt="" /></div>
+            <div class="card-content">
+              <h3>Música</h3>
+              <p>
+                Crianças gostam de música e de canto. Cantar contribui de
+                diversas maneiras para o desenvolvimento sócio-emocional,
+                cognitivo e físico. Enquanto cantam, participam de um grupo,
+                aumentam sua capacidade de percepção de diferentes sons e
+                movimentos, apreendem palavras, conceitos e ritmos novos bem
+                como novas melodias e poesias. Cantamos canções relativas ao
+                projeto em estudo. Também aprendem o manuseio de instrumentos
+                como triângulos, tamborins, chocalhos, reco-recos, guizos.
+                Cantamos em grupos e solos.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/motricidade.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Motricidade</h3>
+              <p>
+                Desenvolve-se a motricidade fina através desenhos, pinturas,
+                rasgaduras, recortar, colar e bastante trabalhos manuais para os
+                diversos projetos, que são executados durante o ano, com os mais
+                diversos materiais como sucatas, papéis, tecidos, objetos da
+                natureza, papel maché, argila e outros. Aprendizado de
+                diferentes técnicas pela utilização de diversos recursos. Também
+                trabalhamos com massa de modelar, com teares, bordados,
+                costuras, etc. Tudo isso faz aumentar muito sua auto confiança
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./img/motor.jpg" alt="" /></div>
+            <div class="card-content">
+              <h3>Motor</h3>
+              <p>
+                Desenvolvimento da motricidade grossa, da lateralidade e das
+                habilidades. Coordenação de movimentos pela oferta de diversos
+                movimentos, da ginástica bastante diversificada e divertidacomo
+                jogos de bola, pular, correr, saltar, escalar, brincadeiras com
+                pneus, com blocos de espuma, e também com acompanhamento
+                musical, representações teatrais, jogos de faz-de-conta,
+                brincadeiras de roda e outros.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./img/social.jpg" alt="" /></div>
+            <div class="card-content">
+              <h3>Social</h3>
+              <p>
+                Promoção de todos comportamentos sociais, capacidades de
+                entrosamento grupal, saber ganhar e dar a vez, ter tolerância,
+                resolver conflitos, acatar opiniões, respeito ao próximo,
+                convivência na amizade.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image"><img src="./img/caseiro.jpg" alt="" /></div>
+            <div class="card-content">
+              <h3>Caseiro</h3>
+              <p>
+                Atiçar alegria na execução de trabalhos caseiros, fazer
+                bolachinhas, ajudar a preparar as refeições comunitárias,
+                preparar festas, etc.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/cognitivo.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Cognitivo</h3>
+              <p>
+                Fomento à compreensão, ao pensamento lógico, à capacidade de
+                perceber e distinguir através de jogos dirigidos em grupo, jogos
+                de mesa, de tatear, de ouvir, de ver, etc.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/criatividade.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Criatividade</h3>
+              <p>
+                Incentivada pelo brincar em geral nos cantinhos e ao ar livre,
+                pelas brincadeiras de faz-de-conta, pelo teatro de fantoches,
+                contos de fadas, teatro infantil, livros, etc.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/natureza.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Natureza</h3>
+              <p>
+                Folguedos e brincadeiras diárias ao ar livre, vivências das
+                ciências naturais, numerosas excursões incentivam o amor à
+                natureza e o sentimento da necessidade da conservação do mundo
+                em que vivemos.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img src="./img/linguistico.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <h3>Linguístico</h3>
+              <p>
+                Entendimento dos idiomas e estimulação à livre manifestação
+                oral. Reconhecimento do sentido, interpretação de gravuras em
+                linguagem através, jogos de dedos, histórias, músicas e outros.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="galeria">
       <div class="row">
         <div class="col s12">
