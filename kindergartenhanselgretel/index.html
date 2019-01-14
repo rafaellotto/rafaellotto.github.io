@@ -159,29 +159,30 @@
           />
         </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#inicio" class="waves-effect waves-red">Início</a></li>
+          <li><a id="nav1" href="#inicio" class="waves-effect waves-red">Início</a></li>
           <li>
-            <a href="#historia" class="waves-effect waves-red"
+            <a id="nav2" href="#historia" class="waves-effect waves-red"
               >Nossa história</a
             >
           </li>
           <li>
-            <a href="#objetivos" class="waves-effect waves-red"
+            <a id="nav3" href="#objetivos" class="waves-effect waves-red"
               >Objetivos e métodos</a
             >
           </li>
           <li>
-            <a href="#atividades" class="waves-effect waves-red">Atividades</a>
+            <a id="nav4" href="#atividades" class="waves-effect waves-red">Atividades</a>
           </li>
           <li>
-            <a href="#galeria" class="waves-effect waves-red"
+            <a id="nav5" href="#galeria" class="waves-effect waves-red"
               >Galeria de fotos</a
             >
           </li>
-          <li><a href="#contato" class="waves-effect waves-red">Contato</a></li>
+          <li><a id="nav6" href="#contato" class="waves-effect waves-red">Contato</a></li>
           <li>
-            <a href="#" class="waves-effect waves-red"
+            <a class="waves-effect waves-red" onclick="changeLang()"
               ><img
+                id="navFlag"
                 src="./img/de.png"
                 width="30"
                 alt=""
@@ -192,8 +193,8 @@
       </div>
     </nav>
 
-    <a id="deutsch-icon" class="btn-floating btn-large waves-effect waves-red">
-      <img src="./img/de.png" width="35" style="margin: 15.75px 0" />
+    <a id="deutsch-icon" class="btn-floating btn-large waves-effect waves-red"  onclick="changeLang()">
+      <img id="buttonFlag" src="./img/de.png" width="35" style="margin: 15.75px 0" />
     </a>
 
     <div class="fixed-action-btn">
@@ -202,33 +203,33 @@
       </a>
       <ul id="floating-button-ul">
         <li>
-          <a href="#inicio" class="btn-floating waves-effect waves-red"
+          <a id="mobileNav1" href="#inicio" class="btn-floating waves-effect waves-red"
             >Início</a
           >
         </li>
         <li>
-          <a href="#historia" class="btn-floating waves-effect waves-red"
+          <a id="mobileNav2" href="#historia" class="btn-floating waves-effect waves-red"
             >História</a
           >
         </li>
 
         <li>
-          <a href="#objetivos" class="btn-floating waves-effect waves-red"
+          <a id="mobileNav3" href="#objetivos" class="btn-floating waves-effect waves-red"
             >Objetivos</a
           >
         </li>
         <li>
-          <a href="#atividades" class="btn-floating waves-effect waves-red"
+          <a id="mobileNav4" href="#atividades" class="btn-floating waves-effect waves-red"
             >Atividades</a
           >
         </li>
         <li>
-          <a href="#galeria" class="btn-floating waves-effect waves-red"
+          <a id="mobileNav5" href="#galeria" class="btn-floating waves-effect waves-red"
             >Galeria</a
           >
         </li>
         <li>
-          <a href="#contato" class="btn-floating waves-effect waves-red"
+          <a id="mobileNav6" href="#contato" class="btn-floating waves-effect waves-red"
             >Contato</a
           >
         </li>
@@ -236,8 +237,8 @@
     </div>
 
     <section id="home">
-      <h2>Bem-vindo(a) ao <br />Kindergarten Hänsel und Gretel</h2>
-      <p class="flow-text center-align">Desde 1988</p>
+      <h2><span id="text-bemvindo">Bem-vindo(a) ao</span><br />Kindergarten Hänsel und Gretel</h2>
+      <p class="flow-text center-align"><span id="text-bemvindo2">Desde</span> 1988</p>
     </section>
     <section id="historia">
       <div class="container">
@@ -513,6 +514,59 @@
         );
       });
 
+      var deutschMode = false;
+      function changeLang() {
+        deutschMode = !deutschMode;
+        document.querySelector("#navFlag").src = deutschMode
+          ? "./img/br.png"
+          : "./img/de.png";
+        document.querySelector("#buttonFlag").src = deutschMode
+          ? "./img/br.png"
+          : "./img/de.png";
+        document.querySelector("#text-bemvindo").innerHTML = deutschMode
+          ? "Willkommem bei"
+          : "Bem-vindo(a) ao";
+        document.querySelector("#text-bemvindo2").innerHTML = deutschMode
+          ? "Zeit"
+          : "Desde";
+        document.querySelector("#nav1").text = deutschMode
+          ? "Start"
+          : "Início";
+        document.querySelector("#nav2").text = deutschMode
+          ? "Unsere Geschichte"
+          : "Nossa história";
+        document.querySelector("#nav3").text = deutschMode
+          ? "Ziele und Methoden"
+          : "Objetivos e métodos";
+        document.querySelector("#nav4").text = deutschMode
+          ? "Aktivitäten"
+          : "Atividades";
+        document.querySelector("#nav5").text = deutschMode
+          ? "Fotogalerie"
+          : "Galeria de fotos";
+        document.querySelector("#nav6").text = deutschMode
+          ? "Kontakt"
+          : "Contato";
+        document.querySelector("#mobileNav1").text = deutschMode
+          ? "Start"
+          : "Início";
+        document.querySelector("#mobileNav2").text = deutschMode
+          ? "Geschichte"
+          : "História";
+        document.querySelector("#mobileNav3").text = deutschMode
+          ? "Ziele"
+          : "Objetivos";
+        document.querySelector("#mobileNav4").text = deutschMode
+          ? "Aktivitäten"
+          : "Atividades";
+        document.querySelector("#mobileNav5").text = deutschMode
+          ? "Fotogalerie"
+          : "Galeria";
+        document.querySelector("#mobileNav6").text = deutschMode
+          ? "Kontakt"
+          : "Contato";
+      }
+
       document.addEventListener("DOMContentLoaded", function() {
         var elems = document.querySelectorAll(".fixed-action-btn");
         var instances = M.FloatingActionButton.init(elems, {
@@ -523,7 +577,6 @@
         var images = document.querySelectorAll(".materialboxed");
         var instances2 = M.Materialbox.init(images, {});
       });
-      f;
     </script>
   </body>
 </html>
