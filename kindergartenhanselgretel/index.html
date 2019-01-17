@@ -194,38 +194,44 @@
     </a>
 
     <div class="fixed-action-btn">
-      <a class="btn-floating btn-large white waves-effect waves-red">
-        <i class="large material-icons black-text">menu</i>
+      <a class="btn-floating btn-large white waves-effect waves-red" onclick="changeIcon()">
+        <i id="mobileMenuIcon" class="large material-icons black-text">menu</i>
       </a>
       <ul id="floating-button-ul">
         <li>
           <a id="mobileNav1" href="#inicio" class="btn-floating waves-effect waves-red"
+            onclick="changeIcon()"
             >Início</a
           >
         </li>
         <li>
           <a id="mobileNav2" href="#historia" class="btn-floating waves-effect waves-red"
+            onclick="changeIcon()"
             >História</a
           >
         </li>
 
         <li>
           <a id="mobileNav3" href="#objetivos" class="btn-floating waves-effect waves-red"
+            onclick="changeIcon()"
             >Objetivos</a
           >
         </li>
         <li>
           <a id="mobileNav4" href="#atividades" class="btn-floating waves-effect waves-red"
+            onclick="changeIcon()"
             >Atividades</a
           >
         </li>
         <li>
           <a id="mobileNav5" href="#galeria" class="btn-floating waves-effect waves-red"
+            onclick="changeIcon()"
             >Galeria</a
           >
         </li>
         <li>
           <a id="mobileNav6" href="#contato" class="btn-floating waves-effect waves-red"
+            onclick="changeIcon()"
             >Contato</a
           >
         </li>
@@ -511,6 +517,15 @@
           }.bind(anchor)
         );
       });
+
+      var menuMobileIsOpened = false;
+
+      function changeIcon() {
+        menuMobileIsOpened = !menuMobileIsOpened;
+        document.getElementById("mobileMenuIcon").innerHTML = menuMobileIsOpened
+          ? 'close'
+          : 'menu';
+      }
 
       var deutschMode = false;
 
