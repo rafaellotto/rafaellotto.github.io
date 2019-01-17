@@ -11,7 +11,11 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons|Indie+Flower"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Indie+Flower"
     />
     <style>
       body {
@@ -148,9 +152,8 @@
 
     <nav>
       <div class="nav-wrapper">
-        <a href="#" class="brand-logo black-text">
+        <a href="/" class="brand-logo black-text">
           <img
-            href="/"
             src="./img/Logo_HanselUndGretel_Site_v2.jpg"
             height="60"
             alt="Logo"
@@ -212,6 +215,7 @@
         src="./img/de.png"
         width="35"
         style="margin: 15.75px 0"
+        alt="Bandeira da Alemanha"
       />
     </a>
 
@@ -567,7 +571,6 @@
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d768.3571735520663!2d-46.6759436396053!3d-23.64220257712663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2bacf15542fddbb!2sKindergarten+H%C3%A4nsel+und+Gretel!5e0!3m2!1spt-BR!2sbr!4v1546928491060"
                 height="350"
-                frameborder="0"
                 style="border:0; width: 100%;"
                 allowfullscreen
               ></iframe>
@@ -614,9 +617,15 @@
         document.querySelector("#navFlag").src = deutschMode
           ? "./img/br.png"
           : "./img/de.png";
+        document.querySelector("#navFlag").alt = deutschMode
+          ? "Bandeira do Brasil"
+          : "Bandeira da Alemanha";
         document.querySelector("#buttonFlag").src = deutschMode
           ? "./img/br.png"
           : "./img/de.png";
+        document.querySelector("#buttonFlag").alt = deutschMode
+          ? "Bandeira do Brasil"
+          : "Bandeira da Alemanha";
 
         var translations = {
           textBemvindo: ["Willkommem bei", "Bem-vindo(a) ao"],
