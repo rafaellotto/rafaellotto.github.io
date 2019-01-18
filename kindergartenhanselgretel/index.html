@@ -191,439 +191,424 @@
     </style>
   </head>
   <body id="inicio">
-    <h1 class="hide">Kindergarten Hänsel und Gretel</h1>
-
-    <nav>
-      <div class="nav-wrapper" style="max-width: 1000px; margin: 0 auto;">
-        <a href="https://ralomach.github.io/kindergartenhanselgretel/" class="brand-logo black-text">
+    <header>
+        <h1 class="hide">Kindergarten Hänsel und Gretel</h1>
+        <nav>
+          <div class="nav-wrapper" style="max-width: 1000px; margin: 0 auto;">
+            <a href="https://ralomach.github.io/kindergartenhanselgretel/" class="brand-logo black-text">
+              <img
+                src="https://ralomach.github.io/kindergartenhanselgretel/img/Logo_HanselUndGretel_Site_v2_196x60.jpg"
+                height="60"
+                alt="Logo"
+                class="left"
+              />
+            </a>
+            <ul id="nav-desktop" class="right hide-on-med-and-down">
+              <li>
+                <a id="nav1" href="#inicio" class="waves-effect waves-red"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a id="nav2" href="#historia" class="waves-effect waves-red"
+                  >Nossa história</a
+                >
+              </li>
+              <li>
+                <a id="nav3" href="#objetivos" class="waves-effect waves-red"
+                  >Objetivos e métodos</a
+                >
+              </li>
+              <li>
+                <a id="nav4" href="#atividades" class="waves-effect waves-red"
+                  >Atividades</a
+                >
+              </li>
+              <li>
+                <a id="nav5" href="#galeria" class="waves-effect waves-red"
+                  >Galeria de fotos</a
+                >
+              </li>
+              <li>
+                <a id="nav6" href="#contato" class="waves-effect waves-red"
+                  >Contato</a
+                >
+              </li>
+              <li>
+                <a class="waves-effect waves-red" onclick="changeLang()"
+                  ><img
+                    id="navFlag"
+                    src="https://ralomach.github.io/kindergartenhanselgretel/img/de_30x21.jpg"
+                    width="30"
+                    alt="Bandeira da Alemanha"
+                    style="padding-top: 26px;"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a id="deutsch-icon" class="btn-floating btn-large waves-effect waves-red" onclick="changeLang()">
           <img
-            src="https://ralomach.github.io/kindergartenhanselgretel/img/Logo_HanselUndGretel_Site_v2_196x60.jpg"
-            height="60"
-            alt="Logo"
-            class="left"
+            id="buttonFlag"
+            src="https://ralomach.github.io/kindergartenhanselgretel/img/de_30x21.jpg"
+            width="30"
+            height="21"
+            style="margin: 17px 0"
+            alt="Bandeira da Alemanha"
           />
         </a>
-        <ul id="nav-desktop" class="right hide-on-med-and-down">
-          <li>
-            <a id="nav1" href="#inicio" class="waves-effect waves-red"
-              >Início</a
-            >
-          </li>
-          <li>
-            <a id="nav2" href="#historia" class="waves-effect waves-red"
-              >Nossa história</a
-            >
-          </li>
-          <li>
-            <a id="nav3" href="#objetivos" class="waves-effect waves-red"
-              >Objetivos e métodos</a
-            >
-          </li>
-          <li>
-            <a id="nav4" href="#atividades" class="waves-effect waves-red"
-              >Atividades</a
-            >
-          </li>
-          <li>
-            <a id="nav5" href="#galeria" class="waves-effect waves-red"
-              >Galeria de fotos</a
-            >
-          </li>
-          <li>
-            <a id="nav6" href="#contato" class="waves-effect waves-red"
-              >Contato</a
-            >
-          </li>
-          <li>
-            <a class="waves-effect waves-red" onclick="changeLang()"
-              ><img
-                id="navFlag"
-                src="https://ralomach.github.io/kindergartenhanselgretel/img/de_30x21.jpg"
-                width="30"
-                alt="Bandeira da Alemanha"
-                style="padding-top: 26px;"
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <a
-      id="deutsch-icon"
-      class="btn-floating btn-large waves-effect waves-red"
-      onclick="changeLang()"
-    >
-      <img
-        id="buttonFlag"
-        src="https://ralomach.github.io/kindergartenhanselgretel/img/de_30x21.jpg"
-        width="30"
-        height="21"
-        style="margin: 17px 0"
-        alt="Bandeira da Alemanha"
-      />
-    </a>
-
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large white waves-effect waves-red" onclick="changeIcon()">
-        <i id="mobileMenuIcon" class="large material-icons black-text">menu</i>
-      </a>
-      <ul id="floating-button-ul">
-        <li>
-          <a id="mobileNav1" href="#inicio" class="btn-floating waves-effect waves-red"
-            onclick="changeIcon()"
-            >Início</a
-          >
-        </li>
-        <li>
-          <a id="mobileNav2" href="#historia" class="btn-floating waves-effect waves-red"
-            onclick="changeIcon()"
-            >História</a
-          >
-        </li>
-
-        <li>
-          <a id="mobileNav3" href="#objetivos" class="btn-floating waves-effect waves-red"
-            onclick="changeIcon()"
-            >Objetivos</a
-          >
-        </li>
-        <li>
-          <a id="mobileNav4" href="#atividades" class="btn-floating waves-effect waves-red"
-            onclick="changeIcon()"
-            >Atividades</a
-          >
-        </li>
-        <li>
-          <a id="mobileNav5" href="#galeria" class="btn-floating waves-effect waves-red"
-            onclick="changeIcon()"
-            >Galeria</a
-          >
-        </li>
-        <li>
-          <a id="mobileNav6" href="#contato" class="btn-floating waves-effect waves-red"
-            onclick="changeIcon()"
-            >Contato</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <section id="home">
-      <h2>
-        <span id="textBemvindo">Bem-vindo(a) ao</span><br />Kindergarten Hänsel
-        und Gretel
-      </h2>
-      <p class="flow-text center-align">
-        <span id="textBemvindo2">Desde</span> 1988
-      </p>
-    </section>
-    <section id="historia">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h2 id="historiaHeading">Nossa história</h2>
-            <p class="flow-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-              finibus, quam vel malesuada congue, quam ligula efficitur sapien,
-              eget porta diam odio ac mauris. Duis rutrum odio sem, sit amet
-              finibus mi accumsan eu. Donec rutrum, est condimentum fermentum
-              condimentum, neque ex porta lectus, a dictum erat odio et risus.
-              Vivamus at interdum diam, malesuada cursus urna. Etiam eu risus
-              neque. Duis vulputate tincidunt suscipit. Donec felis eros, dictum
-              in congue sit amet, imperdiet vel ipsum. Etiam feugiat dui justo,
-              non venenatis dolor mollis eu. Ut in nunc quis quam lacinia mollis
-              at et dui. Fusce aliquam congue porttitor. Vestibulum vitae enim
-              dui. Integer pretium iaculis sollicitudin.
-            </p>
-
-            <p class="flow-text">
-              Vivamus a placerat augue. Sed at nibh non elit facilisis molestie
-              nec eu felis. Praesent finibus, tellus quis pulvinar accumsan,
-              tellus turpis auctor leo, in luctus lacus libero ut tortor. Nulla
-              eget vestibulum nulla. Maecenas blandit aliquet commodo. Duis
-              hendrerit eu arcu vestibulum interdum. Suspendisse potenti. Donec
-              fermentum accumsan ligula, ac consequat magna ultrices eget.
-              Nullam condimentum eleifend odio, in faucibus ante semper vel. Nam
-              sit amet est fringilla, feugiat turpis tempor, maximus metus.
-              Vivamus sed mattis erat, vel ultrices mauris. Duis feugiat, nunc
-              non tincidunt maximus, nisi est porttitor purus, at cursus arcu
-              ipsum non massa.
-            </p>
-
-            <p class="flow-text">
-              Sed at lorem suscipit, suscipit enim ac, dignissim mauris.
-              Vestibulum consectetur eget felis vitae porta. Sed blandit orci
-              tincidunt lacus semper aliquam. Curabitur id bibendum augue, eu
-              venenatis nisi. Donec nunc justo, euismod id aliquam quis,
-              faucibus ac ante. Proin ac tortor gravida, auctor elit et, laoreet
-              augue. Mauris laoreet diam vel mi maximus tincidunt. Sed consequat
-              quis quam eu blandit. Sed in velit nisi. Donec id nisi et arcu
-              commodo rutrum. Curabitur faucibus fermentum placerat. Sed finibus
-              sapien eu enim ultrices, sit amet luctus enim auctor. Integer
-              venenatis sapien ac quam imperdiet, at imperdiet turpis mattis.
-            </p>
-          </div>
+        <div class="fixed-action-btn">
+          <a class="btn-floating btn-large white waves-effect waves-red" onclick="changeIcon()">
+            <i id="mobileMenuIcon" class="large material-icons black-text">menu</i>
+          </a>
+          <ul id="floating-button-ul">
+            <li><a id="mobileNav1" href="#inicio" class="btn-floating waves-effect waves-red"
+                onclick="changeIcon()">
+                Início
+            </a></li>
+            <li><a id="mobileNav2" href="#historia" class="btn-floating waves-effect waves-red"
+                onclick="changeIcon()">
+                História
+            </a></li>
+            <li><a id="mobileNav3" href="#objetivos" class="btn-floating waves-effect waves-red"
+                onclick="changeIcon()">
+                Objetivos
+            </a></li>
+            <li><a id="mobileNav4" href="#atividades" class="btn-floating waves-effect waves-red"
+                onclick="changeIcon()">
+                Atividades
+            </a></li>
+            <li><a id="mobileNav5" href="#galeria" class="btn-floating waves-effect waves-red"
+                onclick="changeIcon()">
+                Galeria
+            </a></li>
+            <li><a id="mobileNav6" href="#contato" class="btn-floating waves-effect waves-red"
+                onclick="changeIcon()">
+                Contato
+            </a></li>
+          </ul>
         </div>
-      </div>
-    </section>
-    <section id="objetivos">
-      <div class="container">
-        <div class="row">
-          <div class="col s12">
-            <h2 id="objetivosHeading">Objetivos e metodologia</h2>
-            <div id="objetivosText">
-              <p class="flow-text">
-                O Jardim de Infância 'Hänsel und Gretel' possui como meta
-                desenvolver a personalidade da criança. Fomenta-se sua fantasia
-                e criatividade que são a base para uma rica vida criadora e
-                realizadora. (Montessori, Piaget, Vygotsky, Steiner, Rousseau)
-              </p>
+    </header>
 
-              <p class="flow-text">
-                Uma convivência com amizade e sem concorrência, nessa faixa
-                etária, evita que a criança possa sentir-se inferior por um ou
-                outro motivo. Qualquer competição na primeira infância não
-                estimula a auto estima mas ao contrário, traz distúrbios
-                psícológicos. Primeiramente a criança precisa conhecer e
-                desenvolver suas habilidades. (Sime, M.; Mussen, M. P.;
-                Rousseau, J. J.; Froebel, F.)
-              </p>
-
-              <p class="flow-text">
-                Com amor e amizade a criança é orientada para sentir-se livre e
-                tranqüila, sem peso nem medos. O princípio é a liberdade
-                regrada, isto é, disciplina e respeito onde se faz necessário.
-                (Rousseau; Niederle; Froebel) Assim adquire segurança e auto
-                confiança. (Stender-Lavatelei, S.; Sime, M.; Rousseau, J. J.)
-              </p>
-
-              <p class="flow-text">
-                Educamos as crianças para que em sua vida futura possam ser
-                realizadores, líderes culturais, sociais, econômicos e políticos
-                e não se tornem simplesmente um 'recurso humano' para obtenção
-                de lucros e consumidores obedientes. Até seis anos foi formada a
-                base para toda sua vida. (Jung, Piaget; Rousseau; Wallon)
-              </p>
-
-              <p class="flow-text">
-                Cantamos, brincamos, fazemos muitos trabalhos artesanais para os
-                projetos com os mais diversos materiais, plantamos, colhemos,
-                fazemos bolachinhas, ginástica apropriada e dirigimos a criança
-                para que inicie a escola primária psiquicamente fortalecida e
-                auto confiante.
-              </p>
-
-              <p class="flow-text">
-                Crianças aprendem um, dois, três ou mais idiomas de uma maneira
-                natural e espontânea, somente ouvindo e falando. Temos crianças
-                que falam fluentemente dois a três idiomas aos 4 anos de idade.
-                Quanto menor e mais nova for a criança, tanto mais plástica é a
-                capacidade de aprendizagem de línguas. Os idiomas aprendidos
-                naturalmente na primeira infância são todos como maternos. No
-                Kindergarten Hänsel und Gretel, todas as atividades acontecem em
-                alemão.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="atividades">
-      <div class="container">
-        <div class="row">
-          <h2 id="atividadesHeading">Atividades</h2>
-
-          <h3 id="cognitivoHeading">Cognitivo</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/cognitivo.jpg" alt="" />
-          <p id="cognitivoText" class="flow-text">
-            Fomento à compreensão, ao pensamento lógico, à capacidade de
-            perceber e distinguir através de jogos dirigidos em grupo, jogos de
-            mesa, de tatear, de ouvir, de ver, etc.
-          </p>
-
-          <h3 id="motricidadeHeading">Motricidade</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/motricidade.jpg" alt="" />
-          <p id="motricidadeText" class="flow-text">
-            Desenvolve-se a motricidade fina através desenhos, pinturas,
-            rasgaduras, recortar, colar e bastante trabalhos manuais para os
-            diversos projetos, que são executados durante o ano, com os mais
-            diversos materiais como sucatas, papéis, tecidos, objetos da
-            natureza, papel maché, argila e outros. Aprendizado de diferentes
-            técnicas pela utilização de diversos recursos. Também trabalhamos
-            com massa de modelar, com teares, bordados, costuras, etc. Tudo isso
-            faz aumentar muito sua auto confiança.
-          </p>
-
-          <h3 id="socialHeading">Social</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/social.jpg" alt="" />
-          <p id="socialText" class="flow-text">
-            Promoção de todos comportamentos sociais, capacidades de
-            entrosamento grupal, saber ganhar e dar a vez, ter tolerância,
-            resolver conflitos, acatar opiniões, respeito ao próximo,
-            convivência na amizade.
-          </p>
-
-          <h3 id="caseiroHeading">Caseiro</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/caseiro.jpg" alt="" />
-          <p id="caseiroText" class="flow-text">
-            Atiçar alegria na execução de trabalhos caseiros, fazer bolachinhas,
-            ajudar a preparar as refeições comunitárias, preparar festas, etc.
-          </p>
-
-          <h3 id="criatividadeHeading">Criatividade</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/criatividade.jpg" alt="" />
-          <p id="criatividadeText" class="flow-text">
-            Incentivada pelo brincar em geral nos cantinhos e ao ar livre, pelas
-            brincadeiras de faz-de-conta, pelo teatro de fantoches, contos de
-            fadas, teatro infantil, livros, etc.
-          </p>
-
-          <h3 id="motorHeading">Motor</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/motor.jpg" alt="" />
-          <p id="motorText" class="flow-text">
-            Desenvolvimento da motricidade grossa, da lateralidade e das
-            habilidades. Coordenação de movimentos pela oferta de diversos
-            movimentos, da ginástica bastante diversificada e divertida como
-            jogos de bola, pular, correr, saltar, escalar, brincadeiras com
-            pneus, com blocos de espuma, e também com acompanhamento musical,
-            representações teatrais, jogos de faz-de-conta, brincadeiras de roda
-            e outros.
-          </p>
-
-          <h3 id="naturezaHeading">Natureza</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/natureza.jpg" alt="" />
-          <p id="naturezaText" class="flow-text">
-            Folguedos e brincadeiras diárias ao ar livre, vivências das ciências
-            naturais, numerosas excursões incentivam o amor à natureza e o
-            sentimento da necessidade da conservação do mundo em que vivemos.
-          </p>
-
-          <h3 id="musicaHeading">Música</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/musica.jpg" alt="" />
-          <p id="musicaText" class="flow-text">
-            Crianças gostam de música e de canto. Cantar contribui de diversas
-            maneiras para o desenvolvimento sócio-emocional, cognitivo e físico.
-            Enquanto cantam, participam de um grupo, aumentam sua capacidade de
-            percepção de diferentes sons e movimentos, apreendem palavras,
-            conceitos e ritmos novos bem como novas melodias e poesias. Cantamos
-            canções relativas ao projeto em estudo. Também aprendem o manuseio
-            de instrumentos como triângulos, tamborins, chocalhos, reco-recos,
-            guizos. Cantamos em grupos e solos.
-          </p>
-
-          <h3 id="linguisticoHeading">Linguístico</h3>
-          <div class="divider"></div>
-          <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/linguistico.jpg" alt="" />
-          <p id="linguisticoText" class="flow-text">
-            Entendimento dos idiomas e estimulação à livre manifestação oral.
-            Reconhecimento do sentido, interpretação de gravuras em linguagem
-            através, jogos de dedos, histórias, músicas e outros.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="galeria">
-      <div class="row">
-        <div class="col s12">
-          <h2 id="galeriaHeading">Galeria de fotos</h2>
-          <div id="fotos" class="row">
-            <div class="col s12 m6 l4">
-              <img
-                class="materialboxed responsive-img"
-                src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria1.jpg"
-                alt="Exemplo de imagem de criança"
-              />
-            </div>
-            <div class="col s12 m6 l4">
-              <img
-                class="materialboxed responsive-img"
-                src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria2.jpg"
-                alt="Exemplo de imagem de criança"
-              />
-            </div>
-            <div class="col s12 m6 l4">
-              <img
-                class="materialboxed responsive-img"
-                src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria3.jpg"
-                alt="Exemplo de imagem de criança"
-              />
-            </div>
-            <div class="col s12 m6 l4">
-              <img
-                class="materialboxed responsive-img"
-                src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria4.jpg"
-                alt="Exemplo de imagem de criança"
-              />
-            </div>
-            <div class="col s12 m6 l4">
-              <img
-                class="materialboxed responsive-img"
-                src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria5.jpg"
-                alt="Exemplo de imagem de criança"
-              />
-            </div>
-            <div class="col s12 m6 l4">
-              <img
-                class="materialboxed responsive-img"
-                src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria6.jpg"
-                alt="Exemplo de imagem de criança"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contato">
-      <div class="row">
-        <div class="col s12">
-          <h2 id="contatoHeading">Contato</h2>
+    <main>
+      <section id="home">
+        <h2>
+          <span id="textBemvindo">Bem-vindo(a) ao</span><br />Kindergarten Hänsel
+          und Gretel
+        </h2>
+        <p class="flow-text center-align">
+          <span id="textBemvindo2">Desde</span> 1988
+        </p>
+      </section>
+      <section id="historia">
+        <div class="container">
           <div class="row">
-            <div class="col s12 l4">
-              <div class="row">
-                <i class="col s12 material-icons medium center-align">phone</i>
-                <div class="phones col s12 m6 l12">
-                  <a class="btn" href="tel:+551155489607" target="_blank"
-                    >+55 11 5548-9607</a
-                  >
-                </div>
-                <div class="phones col s12 m6 l12">
-                  <a class="btn" href="tel:+551155422266" target="_blank"
-                    >+55 11 5542-2266</a
-                  >
-                </div>
-                <div class="phones col s12 m6 l12">
-                  <a class="btn" href="tel:+5511983060706" target="_blank"
-                    >+55 11 98306-0706</a
-                  >
-                </div>
-                <div class="phones col s12 m6 l12">
-                  <a class="btn" href="tel:+5511985389727" target="_blank"
-                    >+55 11 98538-9727</a
-                  >
-                </div>
+            <div class="col s12">
+              <h2 id="historiaHeading">Nossa história</h2>
+              <p class="flow-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                finibus, quam vel malesuada congue, quam ligula efficitur sapien,
+                eget porta diam odio ac mauris. Duis rutrum odio sem, sit amet
+                finibus mi accumsan eu. Donec rutrum, est condimentum fermentum
+                condimentum, neque ex porta lectus, a dictum erat odio et risus.
+                Vivamus at interdum diam, malesuada cursus urna. Etiam eu risus
+                neque. Duis vulputate tincidunt suscipit. Donec felis eros, dictum
+                in congue sit amet, imperdiet vel ipsum. Etiam feugiat dui justo,
+                non venenatis dolor mollis eu. Ut in nunc quis quam lacinia mollis
+                at et dui. Fusce aliquam congue porttitor. Vestibulum vitae enim
+                dui. Integer pretium iaculis sollicitudin.
+              </p>
+
+              <p class="flow-text">
+                Vivamus a placerat augue. Sed at nibh non elit facilisis molestie
+                nec eu felis. Praesent finibus, tellus quis pulvinar accumsan,
+                tellus turpis auctor leo, in luctus lacus libero ut tortor. Nulla
+                eget vestibulum nulla. Maecenas blandit aliquet commodo. Duis
+                hendrerit eu arcu vestibulum interdum. Suspendisse potenti. Donec
+                fermentum accumsan ligula, ac consequat magna ultrices eget.
+                Nullam condimentum eleifend odio, in faucibus ante semper vel. Nam
+                sit amet est fringilla, feugiat turpis tempor, maximus metus.
+                Vivamus sed mattis erat, vel ultrices mauris. Duis feugiat, nunc
+                non tincidunt maximus, nisi est porttitor purus, at cursus arcu
+                ipsum non massa.
+              </p>
+
+              <p class="flow-text">
+                Sed at lorem suscipit, suscipit enim ac, dignissim mauris.
+                Vestibulum consectetur eget felis vitae porta. Sed blandit orci
+                tincidunt lacus semper aliquam. Curabitur id bibendum augue, eu
+                venenatis nisi. Donec nunc justo, euismod id aliquam quis,
+                faucibus ac ante. Proin ac tortor gravida, auctor elit et, laoreet
+                augue. Mauris laoreet diam vel mi maximus tincidunt. Sed consequat
+                quis quam eu blandit. Sed in velit nisi. Donec id nisi et arcu
+                commodo rutrum. Curabitur faucibus fermentum placerat. Sed finibus
+                sapien eu enim ultrices, sit amet luctus enim auctor. Integer
+                venenatis sapien ac quam imperdiet, at imperdiet turpis mattis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="objetivos">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h2 id="objetivosHeading">Objetivos e metodologia</h2>
+              <div id="objetivosText">
+                <p class="flow-text">
+                  O Jardim de Infância 'Hänsel und Gretel' possui como meta
+                  desenvolver a personalidade da criança. Fomenta-se sua fantasia
+                  e criatividade que são a base para uma rica vida criadora e
+                  realizadora. (Montessori, Piaget, Vygotsky, Steiner, Rousseau)
+                </p>
+
+                <p class="flow-text">
+                  Uma convivência com amizade e sem concorrência, nessa faixa
+                  etária, evita que a criança possa sentir-se inferior por um ou
+                  outro motivo. Qualquer competição na primeira infância não
+                  estimula a auto estima mas ao contrário, traz distúrbios
+                  psícológicos. Primeiramente a criança precisa conhecer e
+                  desenvolver suas habilidades. (Sime, M.; Mussen, M. P.;
+                  Rousseau, J. J.; Froebel, F.)
+                </p>
+
+                <p class="flow-text">
+                  Com amor e amizade a criança é orientada para sentir-se livre e
+                  tranqüila, sem peso nem medos. O princípio é a liberdade
+                  regrada, isto é, disciplina e respeito onde se faz necessário.
+                  (Rousseau; Niederle; Froebel) Assim adquire segurança e auto
+                  confiança. (Stender-Lavatelei, S.; Sime, M.; Rousseau, J. J.)
+                </p>
+
+                <p class="flow-text">
+                  Educamos as crianças para que em sua vida futura possam ser
+                  realizadores, líderes culturais, sociais, econômicos e políticos
+                  e não se tornem simplesmente um 'recurso humano' para obtenção
+                  de lucros e consumidores obedientes. Até seis anos foi formada a
+                  base para toda sua vida. (Jung, Piaget; Rousseau; Wallon)
+                </p>
+
+                <p class="flow-text">
+                  Cantamos, brincamos, fazemos muitos trabalhos artesanais para os
+                  projetos com os mais diversos materiais, plantamos, colhemos,
+                  fazemos bolachinhas, ginástica apropriada e dirigimos a criança
+                  para que inicie a escola primária psiquicamente fortalecida e
+                  auto confiante.
+                </p>
+
+                <p class="flow-text">
+                  Crianças aprendem um, dois, três ou mais idiomas de uma maneira
+                  natural e espontânea, somente ouvindo e falando. Temos crianças
+                  que falam fluentemente dois a três idiomas aos 4 anos de idade.
+                  Quanto menor e mais nova for a criança, tanto mais plástica é a
+                  capacidade de aprendizagem de línguas. Os idiomas aprendidos
+                  naturalmente na primeira infância são todos como maternos. No
+                  Kindergarten Hänsel und Gretel, todas as atividades acontecem em
+                  alemão.
+                </p>
               </div>
             </div>
-            <div class="col s12 l8">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d768.3571735520663!2d-46.6759436396053!3d-23.64220257712663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2bacf15542fddbb!2sKindergarten+H%C3%A4nsel+und+Gretel!5e0!3m2!1spt-BR!2sbr!4v1546928491060"
-                height="350"
-                style="border:0; width: 100%;"
-                allowfullscreen
-                title="Mapa da escola no Google Maps"
-              ></iframe>
+          </div>
+        </div>
+      </section>
+      <section id="atividades">
+        <div class="container">
+          <div class="row">
+            <h2 id="atividadesHeading">Atividades</h2>
+
+            <h3 id="cognitivoHeading">Cognitivo</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/cognitivo.jpg" alt="" />
+            <p id="cognitivoText" class="flow-text">
+              Fomento à compreensão, ao pensamento lógico, à capacidade de
+              perceber e distinguir através de jogos dirigidos em grupo, jogos de
+              mesa, de tatear, de ouvir, de ver, etc.
+            </p>
+
+            <h3 id="motricidadeHeading">Motricidade</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/motricidade.jpg" alt="" />
+            <p id="motricidadeText" class="flow-text">
+              Desenvolve-se a motricidade fina através desenhos, pinturas,
+              rasgaduras, recortar, colar e bastante trabalhos manuais para os
+              diversos projetos, que são executados durante o ano, com os mais
+              diversos materiais como sucatas, papéis, tecidos, objetos da
+              natureza, papel maché, argila e outros. Aprendizado de diferentes
+              técnicas pela utilização de diversos recursos. Também trabalhamos
+              com massa de modelar, com teares, bordados, costuras, etc. Tudo isso
+              faz aumentar muito sua auto confiança.
+            </p>
+
+            <h3 id="socialHeading">Social</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/social.jpg" alt="" />
+            <p id="socialText" class="flow-text">
+              Promoção de todos comportamentos sociais, capacidades de
+              entrosamento grupal, saber ganhar e dar a vez, ter tolerância,
+              resolver conflitos, acatar opiniões, respeito ao próximo,
+              convivência na amizade.
+            </p>
+
+            <h3 id="caseiroHeading">Caseiro</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/caseiro.jpg" alt="" />
+            <p id="caseiroText" class="flow-text">
+              Atiçar alegria na execução de trabalhos caseiros, fazer bolachinhas,
+              ajudar a preparar as refeições comunitárias, preparar festas, etc.
+            </p>
+
+            <h3 id="criatividadeHeading">Criatividade</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/criatividade.jpg" alt="" />
+            <p id="criatividadeText" class="flow-text">
+              Incentivada pelo brincar em geral nos cantinhos e ao ar livre, pelas
+              brincadeiras de faz-de-conta, pelo teatro de fantoches, contos de
+              fadas, teatro infantil, livros, etc.
+            </p>
+
+            <h3 id="motorHeading">Motor</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/motor.jpg" alt="" />
+            <p id="motorText" class="flow-text">
+              Desenvolvimento da motricidade grossa, da lateralidade e das
+              habilidades. Coordenação de movimentos pela oferta de diversos
+              movimentos, da ginástica bastante diversificada e divertida como
+              jogos de bola, pular, correr, saltar, escalar, brincadeiras com
+              pneus, com blocos de espuma, e também com acompanhamento musical,
+              representações teatrais, jogos de faz-de-conta, brincadeiras de roda
+              e outros.
+            </p>
+
+            <h3 id="naturezaHeading">Natureza</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/natureza.jpg" alt="" />
+            <p id="naturezaText" class="flow-text">
+              Folguedos e brincadeiras diárias ao ar livre, vivências das ciências
+              naturais, numerosas excursões incentivam o amor à natureza e o
+              sentimento da necessidade da conservação do mundo em que vivemos.
+            </p>
+
+            <h3 id="musicaHeading">Música</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/musica.jpg" alt="" />
+            <p id="musicaText" class="flow-text">
+              Crianças gostam de música e de canto. Cantar contribui de diversas
+              maneiras para o desenvolvimento sócio-emocional, cognitivo e físico.
+              Enquanto cantam, participam de um grupo, aumentam sua capacidade de
+              percepção de diferentes sons e movimentos, apreendem palavras,
+              conceitos e ritmos novos bem como novas melodias e poesias. Cantamos
+              canções relativas ao projeto em estudo. Também aprendem o manuseio
+              de instrumentos como triângulos, tamborins, chocalhos, reco-recos,
+              guizos. Cantamos em grupos e solos.
+            </p>
+
+            <h3 id="linguisticoHeading">Linguístico</h3>
+            <div class="divider"></div>
+            <img class="atividades-foto" src="https://ralomach.github.io/kindergartenhanselgretel/img/linguistico.jpg" alt="" />
+            <p id="linguisticoText" class="flow-text">
+              Entendimento dos idiomas e estimulação à livre manifestação oral.
+              Reconhecimento do sentido, interpretação de gravuras em linguagem
+              através, jogos de dedos, histórias, músicas e outros.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="galeria">
+        <div class="row">
+          <div class="col s12">
+            <h2 id="galeriaHeading">Galeria de fotos</h2>
+            <div id="fotos" class="row">
+              <div class="col s12 m6 l4">
+                <img
+                  class="materialboxed responsive-img"
+                  src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria1.jpg"
+                  alt="Exemplo de imagem de criança"
+                />
+              </div>
+              <div class="col s12 m6 l4">
+                <img
+                  class="materialboxed responsive-img"
+                  src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria2.jpg"
+                  alt="Exemplo de imagem de criança"
+                />
+              </div>
+              <div class="col s12 m6 l4">
+                <img
+                  class="materialboxed responsive-img"
+                  src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria3.jpg"
+                  alt="Exemplo de imagem de criança"
+                />
+              </div>
+              <div class="col s12 m6 l4">
+                <img
+                  class="materialboxed responsive-img"
+                  src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria4.jpg"
+                  alt="Exemplo de imagem de criança"
+                />
+              </div>
+              <div class="col s12 m6 l4">
+                <img
+                  class="materialboxed responsive-img"
+                  src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria5.jpg"
+                  alt="Exemplo de imagem de criança"
+                />
+              </div>
+              <div class="col s12 m6 l4">
+                <img
+                  class="materialboxed responsive-img"
+                  src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria6.jpg"
+                  alt="Exemplo de imagem de criança"
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="contato">
+        <div class="row">
+          <div class="col s12">
+            <h2 id="contatoHeading">Contato</h2>
+            <div class="row">
+              <div class="col s12 l4">
+                <div class="row">
+                  <i class="col s12 material-icons medium center-align">phone</i>
+                  <div class="phones col s12 m6 l12">
+                    <a class="btn" href="tel:+551155489607" target="_blank"
+                      >+55 11 5548-9607</a
+                    >
+                  </div>
+                  <div class="phones col s12 m6 l12">
+                    <a class="btn" href="tel:+551155422266" target="_blank"
+                      >+55 11 5542-2266</a
+                    >
+                  </div>
+                  <div class="phones col s12 m6 l12">
+                    <a class="btn" href="tel:+5511983060706" target="_blank"
+                      >+55 11 98306-0706</a
+                    >
+                  </div>
+                  <div class="phones col s12 m6 l12">
+                    <a class="btn" href="tel:+5511985389727" target="_blank"
+                      >+55 11 98538-9727</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 l8">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d768.3571735520663!2d-46.6759436396053!3d-23.64220257712663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb2bacf15542fddbb!2sKindergarten+H%C3%A4nsel+und+Gretel!5e0!3m2!1spt-BR!2sbr!4v1546928491060"
+                  height="350"
+                  style="border:0; width: 100%;"
+                  allowfullscreen
+                  title="Mapa da escola no Google Maps"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer><p>© Copyright 2019</p></footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
