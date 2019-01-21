@@ -235,7 +235,7 @@
                 >
               </li>
               <li>
-                <a class="waves-effect waves-red" onclick="changeLang()"
+                <a class="waves-effect waves-red" onclick="changeMode()"
                   ><img
                     id="navFlag"
                     src="https://ralomach.github.io/kindergartenhanselgretel/img/de_30x21.jpg"
@@ -247,7 +247,7 @@
             </ul>
           </div>
         </nav>
-        <a id="deutsch-icon" class="btn-floating btn-large waves-effect waves-red" onclick="changeLang()">
+        <a id="deutsch-icon" class="btn-floating btn-large waves-effect waves-red" onclick="changeMode()">
           <img
             id="buttonFlag"
             src="https://ralomach.github.io/kindergartenhanselgretel/img/de_30x21.jpg"
@@ -637,11 +637,11 @@
           : 'menu';
       }
 
-      var deutschMode = false;
+      var deutschMode = localStorage.length > 0
+        ? JSON.parse(localStorage.getItem('deutschMode'))
+        : false;
 
-      function changeLang() {
-        deutschMode = !deutschMode;
-
+      var changeLang = function() {
         document.querySelector("html").lang = deutschMode ? "de" : "pt-br";
 
         document.querySelector("#navFlag").src = deutschMode
@@ -757,6 +757,15 @@
             : translations[key][1];
         }
       }
+
+      var changeMode = function() {
+        deutschMode = !deutschMode;
+        localStorage.setItem("deutschMode", deutschMode);
+        changeLang();
+      }
+
+      changeLang();
+
       document.addEventListener("DOMContentLoaded", function() {
         var elems = document.querySelectorAll(".fixed-action-btn");
         var instances = M.FloatingActionButton.init(elems, {
