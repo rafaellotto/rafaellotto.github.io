@@ -1,0 +1,148 @@
+body {
+  text-align: justify;
+  text-justify: inter-word;
+}
+nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  overflow: hidden;
+  height: 70px;
+}
+nav ul li a {
+  color: black;
+  outline: none;
+}
+.nav-wrapper {
+  line-height: 70px;
+}
+.nav-wrapper a {
+  font-size: 15px;
+  color: black;
+}
+.brand-logo {
+  margin: 5px 0;
+}
+#deutsch-icon {
+  position: fixed;
+  right: 95px;
+  bottom: 23px;
+  background-color: white;
+}
+#home,
+#escola,
+#objetivos,
+#atividades,
+#galeria {
+  padding-top: 70px;
+  min-height: 100vh;
+}
+#contato {
+  padding-top: 70px;
+}
+#home {
+  background-image: url("https://ralomach.github.io/kindergartenhanselgretel/img/bemvindo-mobile.jpg");
+  background-position: center right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home h2 {
+  margin-top: 20vh;
+}
+h2 {
+  text-align: center;
+  font-size: calc(14px + 3.5vw);
+  font-family: "Indie Flower", cursive;
+}
+h3 {
+  font-size: calc(12px + 2vw);
+  margin-top: 50px;
+}
+#fotos img {
+  border-radius: 10px;
+  margin: 10px 0;
+}
+#floating-button-ul {
+  width: 100px;
+  left: -20px;
+}
+#floating-button-ul li a {
+  width: 95px;
+  border-radius: 10px 0 0 10px;
+  background-color: white;
+  color: black;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  max-height: 550px;
+}
+.swiper-slide img {
+  width: 100%;
+}
+.swiper-pagination-bullet-active {
+  background: #b71c1c;
+}
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+}
+.atividades-foto {
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+#atividades h3 {
+  clear: both;
+  padding-top: 25px;
+}
+#atividades p {
+  margin-bottom: 0;
+}
+#tour360frame {
+  width: 100%;
+  height: 60vh;
+  margin-top: 25px;
+}
+.phones {
+  text-align: center;
+}
+.phones a {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  margin: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+.phones a:hover {
+  background-color: lightgray;
+}
+footer {
+  background-color: #212121;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+  .atividades-foto {
+    float: right;
+    margin: 35px 0 0 30px;
+    width: 250px;
+  }
+}
+@media (min-width: 993px) {
+  .brand-logo {
+    margin: 5px 10px;
+  }
+  #home {
+    background-image: url("https://ralomach.github.io/kindergartenhanselgretel/img/bemvindo-desktop.jpg");
+  }
+  #home h2 {
+    margin-top: 10vh;
+  }
+}
