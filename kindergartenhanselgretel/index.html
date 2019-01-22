@@ -22,8 +22,9 @@
 
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      href="https://ralomach.github.io/kindergartenhanselgretel/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="https://ralomach.github.io/kindergartenhanselgretel/css/swiper.min.css" />
     <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -94,7 +95,7 @@
         background-color: white;
       }
       #home,
-      #historia,
+      #escola,
       #objetivos,
       #atividades,
       #galeria {
@@ -120,7 +121,7 @@
       }
       h3 {
         font-size: calc(12px + 2vw);
-        margin: 10px 0;
+        margin-top: 50px;
       }
       #fotos img {
         border-radius: 10px;
@@ -135,6 +136,22 @@
         border-radius: 10px 0 0 10px;
         background-color: white;
         color: black;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        max-height: 550px;
+      }
+      .swiper-slide img {
+        width: 100%;
+      }
+      .swiper-pagination-bullet-active {
+      	background: #b71c1c;
+      }
+      .swiper-pagination-bullet {
+      	width: 15px;
+      	height: 15px;
+      	border: 1px solid white;
       }
       .atividades-foto {
         border-radius: 5px;
@@ -151,6 +168,7 @@
       #tour360frame {
         width: 100%;
         height: 60vh;
+        margin-top: 25px;
       }
       .phones {
         text-align: center;
@@ -176,8 +194,8 @@
       }
       @media (min-width: 768px) {
         .atividades-foto {
-          float: left;
-          margin: 35px 30px 0 0;
+          float: right;
+          margin: 35px 0 0 30px;
           width: 250px;
         }
       }
@@ -214,8 +232,8 @@
                 >
               </li>
               <li>
-                <a id="nav2" href="#historia" class="waves-effect waves-red"
-                  >Nossa história</a
+                <a id="nav2" href="#escola" class="waves-effect waves-red"
+                  >Nossa escola</a
                 >
               </li>
               <li>
@@ -270,9 +288,9 @@
                 onclick="changeIcon()">
                 Início
             </a></li>
-            <li><a id="mobileNav2" href="#historia" class="btn-floating waves-effect waves-red"
+            <li><a id="mobileNav2" href="#escola" class="btn-floating waves-effect waves-red"
                 onclick="changeIcon()">
-                História
+                Escola
             </a></li>
             <li><a id="mobileNav3" href="#objetivos" class="btn-floating waves-effect waves-red"
                 onclick="changeIcon()">
@@ -304,51 +322,65 @@
           <span id="textBemvindo2">Desde</span> 1988
         </p>
       </section>
-      <section id="historia">
+      <section id="escola">
         <div class="container">
           <div class="row">
             <div class="col s12">
-              <h2 id="historiaHeading">Nossa história</h2>
-              <p class="flow-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-                finibus, quam vel malesuada congue, quam ligula efficitur sapien,
-                eget porta diam odio ac mauris. Duis rutrum odio sem, sit amet
-                finibus mi accumsan eu. Donec rutrum, est condimentum fermentum
-                condimentum, neque ex porta lectus, a dictum erat odio et risus.
-                Vivamus at interdum diam, malesuada cursus urna. Etiam eu risus
-                neque. Duis vulputate tincidunt suscipit. Donec felis eros, dictum
-                in congue sit amet, imperdiet vel ipsum. Etiam feugiat dui justo,
-                non venenatis dolor mollis eu. Ut in nunc quis quam lacinia mollis
-                at et dui. Fusce aliquam congue porttitor. Vestibulum vitae enim
-                dui. Integer pretium iaculis sollicitudin.
+              <h2 id="escolaHeading">Nossa escola</h2>
+
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria1.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria2.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria3.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria4.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria5.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="https://ralomach.github.io/kindergartenhanselgretel/img/galeria6.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <h3 id="professorasHeading">Equipe de professoras</h3>
+              <div class="divider"></div>
+              <p id="professorasText" class="flow-text">
+                Todas as professoras possuem o alemão como língua materna, são pedagogas ou psicopedagogas, com especialização em educação infantil pré-escolar.
               </p>
 
-              <p class="flow-text">
-                Vivamus a placerat augue. Sed at nibh non elit facilisis molestie
-                nec eu felis. Praesent finibus, tellus quis pulvinar accumsan,
-                tellus turpis auctor leo, in luctus lacus libero ut tortor. Nulla
-                eget vestibulum nulla. Maecenas blandit aliquet commodo. Duis
-                hendrerit eu arcu vestibulum interdum. Suspendisse potenti. Donec
-                fermentum accumsan ligula, ac consequat magna ultrices eget.
-                Nullam condimentum eleifend odio, in faucibus ante semper vel. Nam
-                sit amet est fringilla, feugiat turpis tempor, maximus metus.
-                Vivamus sed mattis erat, vel ultrices mauris. Duis feugiat, nunc
-                non tincidunt maximus, nisi est porttitor purus, at cursus arcu
-                ipsum non massa.
+              <h3 id="idadesHeading">Idades</h3>
+              <div class="divider"></div>
+              <p id="idadesText" class="flow-text">
+                As crianças podem freqüentar o Kindergarten a partir de nove meses.
               </p>
 
-              <p class="flow-text">
-                Sed at lorem suscipit, suscipit enim ac, dignissim mauris.
-                Vestibulum consectetur eget felis vitae porta. Sed blandit orci
-                tincidunt lacus semper aliquam. Curabitur id bibendum augue, eu
-                venenatis nisi. Donec nunc justo, euismod id aliquam quis,
-                faucibus ac ante. Proin ac tortor gravida, auctor elit et, laoreet
-                augue. Mauris laoreet diam vel mi maximus tincidunt. Sed consequat
-                quis quam eu blandit. Sed in velit nisi. Donec id nisi et arcu
-                commodo rutrum. Curabitur faucibus fermentum placerat. Sed finibus
-                sapien eu enim ultrices, sit amet luctus enim auctor. Integer
-                venenatis sapien ac quam imperdiet, at imperdiet turpis mattis.
+              <h3 id="espacosHeading">Espaços</h3>
+              <div class="divider"></div>
+              <p id="espacosText1" class="flow-text">
+                Ambientes internos: Salas de aula amplas, recinto de brinquedos, cantinho de histórias, quarto de bonecas, sala de teatro e teatro de fantoches, sala de educação física, sala de música, biblioteca grande, dormitório para os pequenos.
               </p>
+              <p id="espacosText2" class="flow-text">
+                Parte externa: Balanços, cavalos de mola, escorregadores, carrossel, ponte pênsil com casinha de tarzan, trepa-trepa, casa de bonecas, caixa de areia.
+              </p>
+              <p id="espacosText3" class="flow-text">
+                Área verde: Jardim grande com muitas árvores frutíferas, gramado, canteiros para plantar e colher verduras. Também temos patos, coelhos e pássaros.
+              </p>
+
+              <h3 id="tour360">Tour 360º</h3>
+              <div class="divider"></div>
+              <div class="row">
+                <iframe id="tour360frame" src="https://www.google.com/maps/embed?pb=!4v1548164110637!6m8!1m7!1sCAoSK0FGMVFpcE1DYmFNemdDdk5IbnpJbnRsVzRHdHZ4V0haaDNKc0dMTFh5Vnc.!2m2!1d-23.64219806576!2d-46.675703991315!3f79.5!4f2.933869999999999!5f0.7820865974627469" style="border:0" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </div>
@@ -565,10 +597,6 @@
                 />
               </div>
             </div>
-            <h2 id="tour360">Tour 360º</h2>
-            <div class="row">
-              <iframe id="tour360frame" src="https://www.google.com/maps/embed?pb=!4v1548096828692!6m8!1m7!1sCAoSK0FGMVFpcFBqc3BNZXpjQ2JNWlhXRUxqeGR6S2szZXhyRlg4eDlleElCZUU.!2m2!1d-23.642163937333!2d-46.675685371332!3f34.500004!4f2.933869999999999!5f0.7820865974627469" style="border:0" allowfullscreen></iframe>
-            </div>
           </div>
         </div>
       </section>
@@ -619,7 +647,8 @@
 
     <footer><p>© Copyright 2019</p></footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://ralomach.github.io/kindergartenhanselgretel/js/materialize.min.js"></script>
+    <script src="https://ralomach.github.io/kindergartenhanselgretel/js/swiper.min.js"></script>
     <script>
       document.querySelectorAll("a[href^='#']").forEach(function(anchor) {
         anchor.addEventListener(
@@ -669,18 +698,26 @@
           textBemvindo: ["Willkommem bei", "Bem-vindo(a) ao"],
           textBemvindo2: ["Zeit", "Desde"],
           nav1: ["Start", "Início"],
-          nav2: ["Unsere Geschichte", "Nossa história"],
+          nav2: ["Unser Kindergarten", "Nossa escola"],
           nav3: ["Ziele und Methoden", "Objetivos e métodos"],
           nav4: ["Aktivitäten", "Atividades"],
           nav5: ["Fotogalerie", "Galeria de fotos"],
           nav6: ["Kontakt", "Contato"],
           mobileNav1: ["Start", "Início"],
-          mobileNav2: ["Geschichte", "História"],
+          mobileNav2: ["Kindergarten", "Escola"],
           mobileNav3: ["Ziele", "Objetivos"],
           mobileNav4: ["Aktivitäten", "Atividades"],
           mobileNav5: ["Fotogalerie", "Galeria"],
           mobileNav6: ["Kontakt", "Contato"],
-          historiaHeading: ["Unsere Geschichte", "Nossa história"],
+          escolaHeading: ["Unser Kindergarten", "Nossa escola"],
+          professorasHeading: ["Lehrerstaff", "Equipe de professoras"],
+          professorasText: ["Alle Lehrerinnen haben Deutsch als Muttersprache, sind Pädagoginnen oder Psychopädagoginnen mit spezieller Ausbildung für Kleinkinder.", "Todas as professoras possuem o alemão como língua materna, são pedagogas ou psicopedagogas, com especialização em educação infantil pré-escolar."],
+          idadesHeading: ["Alterstufen", "Idades"],
+          idadesText: ["Die Kinder können ab neun Monate den Kleinkindergarten besuchen.", "As crianças podem freqüentar o Kindergarten a partir de nove meses."],
+          espacosHeading: ["Räume", "Espaços"],
+          espacosText1: ["Interne Umgebungen: Klassenzimmer, Spielzimmer, Geschichtenecke, Puppenzimmer, Theaterraum, Gymnastikraum, Musikraum, Schlafzimmer für die Kleineren und eine grosse Bibliotek.", "Ambientes internos: Salas de aula amplas, recinto de brinquedos, cantinho de histórias, quarto de bonecas, sala de teatro e teatro de fantoches, sala de educação física, sala de música, biblioteca grande, dormitório para os pequenos."],
+          espacosText2: ["Im Freien: Schaukeln, Rutschbahnen, Schaukelpferde, Klettergerüste, Puppenhaus, Hängebrücke mit Tarzanhäuschen, Sandkasten, Karussel.", "Parte externa: Balanços, cavalos de mola, escorregadores, carrossel, ponte pênsil com casinha de tarzan, trepa-trepa, casa de bonecas, caixa de areia."],
+          espacosText3: ["Garten: Grosser Garten mit Obstbäume, grosse Rasenfläche sowie Beeten wo die Kinder gemüse säen, pflanzen und ernten können. Wir haben auch Enten, Hasen und Vögel.", "Área verde: Jardim grande com muitas árvores frutíferas, gramado, canteiros para plantar e colher verduras. Também temos patos, coelhos e pássaros."],
           objetivosHeading: ["Ziele und Methoden", "Objetivos e métodos"],
           atividadesHeading: ["Aktivitäten", "Atividades"],
           galeriaHeading: ["Fotogalerie", "Galeria de fotos"],
@@ -784,6 +821,21 @@
         var images = document.querySelectorAll(".materialboxed");
         var instances2 = M.Materialbox.init(images, {});
       });
+
+      var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        autoplay: {
+          delay: 3500
+        },
+        effect: 'fade',
+        fadeEffect: {
+          crossFade: true
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+      })
     </script>
   </body>
 </html>
