@@ -37,6 +37,7 @@ nav ul li a {
   right: 95px;
   bottom: 23px;
   background-color: white;
+  z-index: 100;
 }
 #home,
 #escola,
