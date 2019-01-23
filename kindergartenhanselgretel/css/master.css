@@ -2,6 +2,14 @@ body {
   text-align: justify;
   text-justify: inter-word;
 }
+.lazyload {
+	opacity: 0;
+}
+.lazyloading {
+	opacity: 1;
+	transition: opacity 300ms;
+	background: #ffffff url(https://ralomach.github.io/kindergartenhanselgretel/img/loader.gif) no-repeat center;
+}
 nav {
   position: fixed;
   top: 0;
