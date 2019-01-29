@@ -183,4 +183,4 @@ var mySwiper = new Swiper ('.swiper-container', {
     el: '.swiper-pagination',
     clickable: true
   },
-})
+});
