@@ -44,7 +44,7 @@ var changeLang = function() {
 
   var translations = {
     textBemvindo: ["Willkommem bei", "Bem-vindo(a) ao"],
-    textBemvindo2: ["Zeit", "Desde"],
+    textBemvindo2: ["Seit", "Desde"],
     nav1: ["Start", "Início"],
     nav2: ["Unser Kindergarten", "Nossa escola"],
     nav3: ["Ziele und Methoden", "Objetivos e métodos"],
