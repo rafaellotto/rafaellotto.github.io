@@ -129,6 +129,20 @@ h3 {
 .phones a:hover {
   background-color: lightgray;
 }
+#fbbtn {
+  border: 1px solid #3b579d;
+  background-color: #3b579d;
+  color: white;
+  border-radius: 10px;
+  margin: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+#fbbtn:hover {
+  background-color: white;
+  color: #3b579d;
+}
 footer {
   background-color: #212121;
   color: white;
