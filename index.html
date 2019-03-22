@@ -14,16 +14,20 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+      rel="stylesheet"
+    />
     <title>Rafael Lotto Machado | ralomach</title>
     <style>
       body {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Comfortaa", sans;
       }
 
       #my-photo {
@@ -31,180 +35,163 @@
         box-shadow: 0px 5px 10px gray;
       }
       footer div {
-        text-align: center; 
+        text-align: center;
       }
     </style>
   </head>
 
   <body class="container">
-    <div class="row align-items-center my-3" style="min-height: 40vh;">
-      <div class="col">
+    <div class="row align-items-center" style="min-height: 70vh;">
+      <header class="col">
         <img
           id="my-photo"
-          class="d-block mx-auto"
+          class="d-block mx-auto my-1"
           width="165"
           src="./images/eu.jpg"
           alt="Minha foto"
         />
         <h1 class="text-center mt-3">Rafael Lotto Machado</h1>
-        <p class="text-center m-0">
-          I am a passionate front-end developer, eager to learn and to improve
-          my skills.
+        <p class="text-center">
+          Developer @ Rádio Trans Mundial
         </p>
-      </div>
+        <div class="row justify-content-center">
+          <div class="col-1">
+            <a
+              class="btn text-info"
+              href="mailto:ralomach@gmail.com"
+              target="_blank"
+              rel="noopener"
+              ><i class="fas fa-envelope fa-2x"></i
+            ></a>
+          </div>
+          <div class="col-1">
+            <a
+              class="btn text-info"
+              href="https://www.linkedin.com/in/rafaellotto/"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-linkedin fa-2x"></i
+            ></a>
+          </div>
+          <div class="col-1">
+            <a
+              class="btn text-info"
+              href="https://github.com/ralomach"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-github fa-2x"></i
+            ></a>
+          </div>
+          <div class="col-1">
+            <a
+              class="btn text-info"
+              href="https://twitter.com/ralomach"
+              target="_blank"
+              rel="noopener"
+              ><i class="fab fa-twitter fa-2x"></i
+            ></a>
+          </div>
+        </div>
+      </header>
     </div>
 
     <div class="row mb-5">
       <div class="col">
         <h2 class="text-center">Projects</h2>
-        <div class="accordion" id="ac1">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-outline-info btn-block"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  React
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseOne"
-              class="collapse"
-              aria-labelledby="headingOne"
-              data-parent="#ac1"
-            >
-              <div class="card-body">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    class="card-img-top"
-                    src="https://image.thum.io/get/width/300/crop/700/https://ralomach.github.io/react-youtube-search/"
-                    alt="Imagem do app de pesquisa do Youtube"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Youtube Search App</h5>
-                    <p class="card-text">
-                      A fast and clean YouTube player made with React.
-                    </p>
-                    <a
-                      href="https://github.com/ralomach/react-youtube-search"
-                      class="btn btn-info btn-block"
-                      target="_blank"
-                      rel="noreferrer"
-                      >See the code</a
-                    >
-                    <a
-                      href="https://ralomach.github.io/react-youtube-search/"
-                      class="btn btn-info btn-block"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Test it</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+
+        <!-- Kindergarten Website -->
+        <div
+          class="row justify-content-center align-items-center"
+          style="min-height: 50vh;"
+        >
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="https://image.thum.io/get/width/510/crop/700/https://www.kindergartenhanselgretel.com.br/"
+              alt="Imagem do site da IBASP"
+            />
           </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button
-                  class="btn btn-outline-info btn-block collapsed"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseTwo"
-                >
-                  WordPress
-                </button>
-              </h5>
-            </div>
-            <div
-              id="collapseTwo"
-              class="collapse"
-              aria-labelledby="headingTwo"
-              data-parent="#ac1"
-            >
-              <div class="card-body">
-                <div class="card" style="width: 18rem;">
-                  <img
-                    class="card-img-top"
-                    src="https://image.thum.io/get/width/300/crop/700/https://ibasp.org.br"
-                    alt="Imagem do app de pesquisa do Youtube"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">IBASP Website</h5>
-                    <p class="card-text">
-                      A WordPress theme with custom front page, events, SEO and
-                      notifications.
-                    </p>
-                    <a
-                      href="https://github.com/ralomach/ibasp-theme"
-                      class="btn btn-info btn-block"
-                      target="_blank"
-                      rel="noreferrer"
-                      >See the code</a
-                    >
-                    <a
-                      href="https://ibasp.org.br"
-                      class="btn btn-info btn-block"
-                      target="_blank"
-                      rel="noreferrer"
-                      >Test it</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-md-5 text-center">
+            <h3 class="my-2">
+              <a href="https://www.kindergartenhanselgretel.com.br/"
+                >Kindergarten Website</a
+              >
+            </h3>
+            <p>A WordPress theme with custom front page and multilingual.</p>
+            <img src="./images/wordpress.jpg" width="100" alt="WordPress logo" title="Made with WordPress" />
+          </div>
+        </div>
+
+        <!-- J & Góes Website -->
+        <div
+          class="row justify-content-center align-items-center"
+          style="min-height: 50vh;"
+        >
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="https://image.thum.io/get/width/510/crop/700/https://www.jgoesodonto.com.br/"
+              alt="Imagem do site da IBASP"
+            />
+          </div>
+          <div class="col-md-5 text-center">
+            <h3 class="my-2">
+              <a href="https://www.jgoesodonto.com.br/"
+                >J & Góes Odonto Website</a
+              >
+            </h3>
+            <p>A simple website using CSS sprites.</p>
+            <img src="./images/bootstrap.jpg" width="150" alt="Bootstrap logo" title="Made with Bootstrap" />
+          </div>
+        </div>
+
+        <!-- IBASP Website -->
+        <div
+          class="row justify-content-center align-items-center"
+          style="min-height: 50vh;"
+        >
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="https://image.thum.io/get/width/510/crop/700/https://www.ibasp.org.br/"
+              alt="Imagem do site da IBASP"
+            />
+          </div>
+          <div class="col-md-5 text-center">
+            <h3 class="my-2">
+              <a href="https://www.ibasp.org.br/"
+                >IBASP Website</a
+              >
+            </h3>
+            <p>A WordPress theme with custom front page, events, SEO and notifications.</p>
+            <img src="./images/wordpress.jpg" width="100" alt="WordPress logo" title="Made with WordPress" />
+          </div>
+        </div>
+
+        <!-- react youtube search app -->
+        <div
+          class="row justify-content-center align-items-center"
+          style="min-height: 50vh;"
+        >
+          <div class="col-md-5">
+            <img
+              class="card-img-top"
+              src="https://image.thum.io/get/width/510/crop/700/https://www.ralomach.com.br/react-youtube-search/"
+              alt="Imagem do app de pesquisa do Youtube"
+            />
+          </div>
+          <div class="col-md-5 text-center">
+            <h3 class="my-2">
+              <a href="https://www.ralomach.com.br/react-youtube-search/"
+                >Youtube Search App</a
+              >
+            </h3>
+            <p>A fast and clean YouTube player</p>
+            <img src="./images/react.jpg" width="150" alt="React logo" title="Made with React" />
           </div>
         </div>
       </div>
     </div>
-
-    <footer class="row border rounded justify-content-center shadow">
-      <div class="col-2">
-        <a
-          class="btn text-info"
-          href="mailto:ralomach@gmail.com"
-          target="_blank"
-          rel="noopener"
-          ><i class="fas fa-envelope fa-2x"></i
-        ></a>
-      </div>
-      <div class="col-2">
-        <a
-          class="btn text-info"
-          href="https://www.linkedin.com/in/rafaellotto/"
-          target="_blank"
-          rel="noopener"
-          ><i class="fab fa-linkedin fa-2x"></i
-        ></a>
-      </div>
-      <div class="col-2">
-        <a
-          class="btn text-info"
-          href="https://github.com/ralomach"
-          target="_blank"
-          rel="noopener"
-          ><i class="fab fa-github fa-2x"></i
-        ></a>
-      </div>
-      <div class="col-2">
-        <a
-          class="btn text-info"
-          href="https://twitter.com/ralomach"
-          target="_blank"
-          rel="noopener"
-          ><i class="fab fa-twitter fa-2x"></i
-        ></a>
-      </div>
-    </footer>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -212,13 +199,13 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
   </body>
