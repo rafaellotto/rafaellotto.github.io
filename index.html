@@ -29,13 +29,14 @@
       body {
         font-family: "Comfortaa", sans;
       }
-
       #my-photo {
         border-radius: 50% 0;
         box-shadow: 0px 5px 10px gray;
       }
-      footer div {
-        text-align: center;
+      @media screen and (max-width: 768px) {
+        h1 {
+          font-size: 30px;
+        }
       }
     </style>
   </head>
@@ -54,8 +55,8 @@
         <p class="text-center">
           Developer @ Rádio Trans Mundial
         </p>
-        <div class="row justify-content-center">
-          <div class="col-1">
+        <div class="row justify-content-center" style="max-width: 350px; margin: 0 auto;">
+          <div class="col text-center">
             <a
               class="btn text-info"
               href="mailto:ralomach@gmail.com"
@@ -64,7 +65,7 @@
               ><i class="fas fa-envelope fa-2x"></i
             ></a>
           </div>
-          <div class="col-1">
+          <div class="col text-center">
             <a
               class="btn text-info"
               href="https://www.linkedin.com/in/rafaellotto/"
@@ -73,7 +74,7 @@
               ><i class="fab fa-linkedin fa-2x"></i
             ></a>
           </div>
-          <div class="col-1">
+          <div class="col text-center">
             <a
               class="btn text-info"
               href="https://github.com/ralomach"
@@ -82,7 +83,7 @@
               ><i class="fab fa-github fa-2x"></i
             ></a>
           </div>
-          <div class="col-1">
+          <div class="col text-center">
             <a
               class="btn text-info"
               href="https://twitter.com/ralomach"
@@ -98,7 +99,7 @@
     <div class="row mb-5">
       <div class="col">
         <h2 class="text-center">Projects</h2>
-
+        <hr />
         <!-- Kindergarten Website -->
         <div
           class="row justify-content-center align-items-center"
@@ -121,7 +122,7 @@
             <img src="./images/wordpress.jpg" width="100" alt="WordPress logo" title="Made with WordPress" />
           </div>
         </div>
-
+        <hr />
         <!-- J & Góes Website -->
         <div
           class="row justify-content-center align-items-center"
@@ -144,7 +145,7 @@
             <img src="./images/bootstrap.jpg" width="150" alt="Bootstrap logo" title="Made with Bootstrap" />
           </div>
         </div>
-
+        <hr />
         <!-- IBASP Website -->
         <div
           class="row justify-content-center align-items-center"
@@ -167,7 +168,7 @@
             <img src="./images/wordpress.jpg" width="100" alt="WordPress logo" title="Made with WordPress" />
           </div>
         </div>
-
+        <hr />
         <!-- react youtube search app -->
         <div
           class="row justify-content-center align-items-center"
