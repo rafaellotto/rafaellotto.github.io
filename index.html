@@ -55,45 +55,93 @@
     <!-- Meta Tags Generated via http://heymeta.com -->
 
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.min.css" />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-    />
-    <link
       href="https://fonts.googleapis.com/css?family=Comfortaa"
-      rel="stylesheet"
     />
     <title>Rafael Lotto Machado | ralomach</title>
     <style>
       body {
         font-family: "Comfortaa", sans;
+        text-align: center;
+        color: #212529;
       }
       #my-photo {
         border-radius: 50% 0;
         box-shadow: 0px 5px 10px gray;
       }
-      main .websites-images {
-        width: 100%;
-        height: auto;
-        border: 1px solid #ddd;
-        border-radius: 10px;
+      h1,
+      h2 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
       }
-      main p {
-        max-width: 350px;
-        margin: 15px auto;
+      h1 {
+        font-size: 2.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.75rem;
+      }
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+      .social a {
+        width: 60px;
+        height: 60px;
+        transform: scale(0.65);
+      }
+      .icons {
+        width: 100%;
+        height: 100%;
+        background-image: url('./images/icons.jpg');
+        background-repeat: no-repeat;
+      }
+      .icons.email {
+        background-position: 0 0;
+      }
+      .icons.linkedin {
+        background-position: -60px 0;
+      }
+      .icons.github {
+        background-position: -120px 0;
+      }
+      .icons.twitter {
+        background-position: -180px 0;
+      }
+      hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: 0;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
       }
       .project {
         min-height: 50vh;
         max-height: 450px;
       }
-      a {
+      .websites-images {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      }
+      .websites-titles {
         color: #17a2b8;
         font-weight: 600;
+        text-decoration: none;
       }
+      .websites-titles:hover {
+        text-decoration: underline;
+      }
+      .websites-descriptions {
+        max-width: 350px;
+        margin: 15px auto;
+      }
+      
       @media screen and (max-width: 768px) {
         h1 {
           font-size: 30px;
@@ -125,54 +173,46 @@
       <header class="col">
         <img
           id="my-photo"
-          class="d-block mx-auto my-1"
+          class="mx-auto my-1"
           width="165"
           src="./images/eu.jpg"
           alt="Minha foto"
         />
-        <h1 class="text-center mt-3">Rafael Lotto Machado</h1>
-        <p class="text-center">
+        <h1 class="mt-3" style="font-size: 2.5rem;">Rafael Lotto Machado</h1>
+        <p>
           Developer @ Rádio Trans Mundial
         </p>
         <div
-          class="row justify-content-center"
+          class="social row justify-content-center"
           style="max-width: 350px; margin: 0 auto;"
         >
           <a
-            class="btn text-info"
             href="mailto:ralomach@gmail.com"
             target="_blank"
             rel="noopener"
-            ><i class="fas fa-envelope fa-2x"></i
-          ></a>
+            ><div class="icons email"></div></a>
           <a
-            class="btn text-info"
             href="https://www.linkedin.com/in/ralomach"
             target="_blank"
             rel="noopener"
-            ><i class="fab fa-linkedin fa-2x"></i
-          ></a>
+            ><div class="icons linkedin"></div></a>
           <a
-            class="btn text-info"
             href="https://github.com/ralomach"
             target="_blank"
             rel="noopener"
-            ><i class="fab fa-github fa-2x"></i
-          ></a>
+            ><div class="icons github"></div></a>
           <a
-            class="btn text-info"
             href="https://twitter.com/ralomach"
             target="_blank"
             rel="noopener"
-            ><i class="fab fa-twitter fa-2x"></i
-          ></a>
+            ><div class="icons twitter"></div></a>
         </div>
       </header>
     </div>
 
     <main class="row mb-5">
       <div class="col">
-        <h2 class="text-center">Projects</h2>
+        <h2>Projects</h2>
         <hr />
         <!-- Loja RTM -->
         <div
@@ -182,23 +222,31 @@
           <div class="col-md-6">
             <a href="https://loja.transmundial.com.br/" target="_blank">
               <img
-                class="websites-images"
-                src="https://image.thum.io/get/width/510/crop/700/https://loja.transmundial.com.br/"
+                class="websites-images lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="https://image.thum.io/get/width/510/crop/700/https://loja.transmundial.com.br/"
                 alt="Imagem do site da Loja da Rádio Trans Mundial"
               />
             </a>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6">
             <h3 class="my-2">
-              <a href="https://loja.transmundial.com.br/" target="_blank">
+              <a
+                class="websites-titles"
+                class=""
+                href="https://loja.transmundial.com.br/"
+                target="_blank"
+              >
                 RTM Store
               </a>
             </h3>
-            <p>
+            <p class="websites-descriptions">
               A Woocommerce theme based on Storefront with custom CSS and JS
             </p>
             <img
-              src="./images/woocommerce.jpg"
+              class="lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./images/woocommerce.jpg"
               width="175"
               alt="Woocommerce logo"
               title="Made with Woocommerce"
@@ -214,23 +262,29 @@
               target="_blank"
             >
               <img
-                class="websites-images"
-                src="https://image.thum.io/get/width/510/crop/700/https://www.kindergartenhanselgretel.com.br/"
+                class="websites-images lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="https://image.thum.io/get/width/510/crop/700/https://www.kindergartenhanselgretel.com.br/"
                 alt="Imagem do site Kindergarten"
               />
             </a>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6">
             <h3 class="my-2">
               <a
+                class="websites-titles"
                 href="https://www.kindergartenhanselgretel.com.br/"
                 target="_blank"
                 >Kindergarten Website</a
               >
             </h3>
-            <p>A WordPress theme with custom front page and multilingual</p>
+            <p class="websites-descriptions">
+              A WordPress theme with custom front page and multilingual
+            </p>
             <img
-              src="./images/wordpress.jpg"
+              class="lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./images/wordpress.jpg"
               width="100"
               alt="WordPress logo"
               title="Made with WordPress"
@@ -243,21 +297,29 @@
           <div class="col-md-6">
             <a href="https://www.jgoesodonto.com.br/" target="_blank">
               <img
-                class="websites-images"
-                src="https://image.thum.io/get/width/510/crop/700/https://www.jgoesodonto.com.br/"
+                class="websites-images lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="https://image.thum.io/get/width/510/crop/700/https://www.jgoesodonto.com.br/"
                 alt="Imagem do site da IBASP"
               />
             </a>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6">
             <h3 class="my-2">
-              <a href="https://www.jgoesodonto.com.br/" target="_blank"
+              <a
+                class="websites-titles"
+                href="https://www.jgoesodonto.com.br/"
+                target="_blank"
                 >J & Góes Odonto Website</a
               >
             </h3>
-            <p>A simple website using CSS sprites</p>
+            <p class="websites-descriptions">
+              A simple website using CSS sprites
+            </p>
             <img
-              src="./images/bootstrap.jpg"
+              class="lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./images/bootstrap.jpg"
               width="150"
               alt="Bootstrap logo"
               title="Made with Bootstrap"
@@ -270,24 +332,30 @@
           <div class="col-md-6">
             <a href="https://www.ibasp.org.br/" target="_blank">
               <img
-                class="websites-images"
-                src="https://image.thum.io/get/width/510/crop/700/https://www.ibasp.org.br/"
+                class="websites-images lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="https://image.thum.io/get/width/510/crop/700/https://www.ibasp.org.br/"
                 alt="Imagem do site da IBASP"
               />
             </a>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6">
             <h3 class="my-2">
-              <a href="https://www.ibasp.org.br/" target="_blank"
+              <a
+                class="websites-titles"
+                href="https://www.ibasp.org.br/"
+                target="_blank"
                 >IBASP Website</a
               >
             </h3>
-            <p>
+            <p class="websites-descriptions">
               A WordPress theme with custom front page, events, SEO and
               notifications
             </p>
             <img
-              src="./images/wordpress.jpg"
+              class="lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./images/wordpress.jpg"
               width="100"
               alt="WordPress logo"
               title="Made with WordPress"
@@ -303,23 +371,27 @@
               target="_blank"
             >
               <img
-                class="websites-images"
-                src="https://image.thum.io/get/width/510/crop/700/https://www.ralomach.com.br/react-youtube-search/"
+                class="websites-images lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="https://image.thum.io/get/width/510/crop/700/https://www.ralomach.com.br/react-youtube-search/"
                 alt="Imagem do app de pesquisa do Youtube"
               />
             </a>
           </div>
-          <div class="col-md-6 text-center">
+          <div class="col-md-6">
             <h3 class="my-2">
               <a
+                class="websites-titles"
                 href="https://www.ralomach.com.br/react-youtube-search/"
                 target="_blank"
                 >Youtube Search App</a
               >
             </h3>
-            <p>A fast and clean YouTube player</p>
+            <p class="websites-descriptions">A fast and clean YouTube player</p>
             <img
-              src="./images/react.jpg"
+              class="lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./images/react.jpg"
               width="100"
               alt="React logo"
               title="Made with React"
@@ -328,21 +400,11 @@
         </div>
       </div>
     </main>
-
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.6/dist/lazyload.min.js"></script>
+    <script>
+      var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+      });
+    </script>
   </body>
 </html>
