@@ -8,7 +8,7 @@
     />
     <meta
       name="description"
-      content="A passionate front end developer, eager to learn and to develop new skills."
+      content="A passionate developer, eager to learn and to develop new skills."
     />
     <meta name="theme-color" content="#17a2b8" />
     <meta
@@ -20,7 +20,7 @@
     <meta itemprop="name" content="Rafael Lotto Machado | ralomach" />
     <meta
       itemprop="description"
-      content="A passionate front end developer, eager to learn and to develop new skills."
+      content="A passionate developer, eager to learn and to develop new skills."
     />
     <meta
       itemprop="image"
@@ -33,7 +33,7 @@
     <meta property="og:title" content="Rafael Lotto Machado | ralomach" />
     <meta
       property="og:description"
-      content="A passionate front end developer, eager to learn and to develop new skills."
+      content="A passionate developer, eager to learn and to develop new skills."
     />
     <meta
       property="og:image"
@@ -45,7 +45,7 @@
     <meta name="twitter:title" content="Rafael Lotto Machado | ralomach" />
     <meta
       name="twitter:description"
-      content="A passionate front end developer, eager to learn and to develop new skills."
+      content="A passionate developer, eager to learn and to develop new skills."
     />
     <meta
       name="twitter:image"
@@ -84,11 +84,17 @@
         font-size: 2rem;
       }
       h3 {
+        font-weight: 500;
+      }
+      .project h3 {
         font-size: 1.75rem;
       }
       p {
         margin-top: 0;
         margin-bottom: 1rem;
+      }
+      a:link, a:visited {
+        color: #17a2b8;
       }
       .social a {
         width: 60px;
@@ -98,7 +104,7 @@
       .icons {
         width: 100%;
         height: 100%;
-        background-image: url('./images/icons.jpg');
+        background-image: url("./images/icons.jpg");
         background-repeat: no-repeat;
       }
       .icons.email {
@@ -141,7 +147,29 @@
         max-width: 350px;
         margin: 15px auto;
       }
-      
+      #skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      #skills h3 {
+        padding: 5px;
+        margin: 5px;
+        border: 1px solid #17a2b8;
+        border-radius: 5px;
+      }
+      #languages {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      #languages h3 {
+        margin: 0;
+        margin-bottom: 5px;
+        color: #17a2b8;
+      }
+
       @media screen and (max-width: 768px) {
         h1 {
           font-size: 30px;
@@ -180,7 +208,7 @@
         />
         <h1 class="mt-3" style="font-size: 2.5rem;">Rafael Lotto Machado</h1>
         <p>
-          Developer @ Rádio Trans Mundial
+          client's problem solver
         </p>
         <div
           class="social row justify-content-center"
@@ -191,45 +219,184 @@
             target="_blank"
             rel="noopener"
             title="E-mail"
-            ><div class="icons email"></div></a>
+            ><div class="icons email"></div
+          ></a>
           <a
             href="https://www.linkedin.com/in/ralomach"
             target="_blank"
             rel="noopener"
             title="LinkedIn"
-            ><div class="icons linkedin"></div></a>
+            ><div class="icons linkedin"></div
+          ></a>
           <a
             href="https://github.com/ralomach"
             target="_blank"
             rel="noopener"
             title="Github"
-            ><div class="icons github"></div></a>
+            ><div class="icons github"></div
+          ></a>
           <a
             href="https://twitter.com/ralomach"
             target="_blank"
             rel="noopener"
             title="Twitter"
-            ><div class="icons twitter"></div></a>
+            ><div class="icons twitter"></div
+          ></a>
         </div>
       </header>
     </div>
 
     <main class="row mb-5">
       <div class="col">
+        <h2>Education</h2>
+        <hr />
+        <div id="education">
+          <h3>Front End Development<br /><small>@ <a href="https://www.freecodecamp.org" target="_blank">FreeCodeCamp</a> (May-Jun/2018)</small></h3>
+          <h3>Computer Programming<br /><small>@ <a href="https://www.khanacademy.org" target="_blank">Khan Academy</a> (Sep/2017)</small></h3>
+          <h3>Mechanical Engineering<br /><small>@ <a href="https://portal.fei.edu.br" target="_blank">FEI</a> (2005-2010)</small></h3>
+        </div>
+        <br />
+        
+        <h2>Skills</h2>
+        <hr />
+        <div id="skills">
+          <h3>Bootstrap</h3>
+          <h3>CSS</h3>
+          <h3>Dart</h3>
+          <h3>Flutter</h3>
+          <h3>Gulp</h3>
+          <h3>HTML</h3>
+          <h3>JavaScript</h3>
+          <h3>MySQL</h3>
+          <h3>PDO</h3>
+          <h3>PHP</h3>
+          <h3>PWA</h3>
+          <h3>Python</h3>
+          <h3>SQL</h3>
+        </div>
+        <br />
+
+        <h2>Languages</h2>
+        <hr />
+        <div id="languages">
+          <h3>pt-br</h3>
+          <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/bra.gif" width="50" loading="lazy" />
+          <p>Nascido no Brasil</p>
+          <br />
+          <h3>en</h3>
+          <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/usa.gif" width="50" loading="lazy" />
+          <p>Started learning English since 8 years old and use it to learn new things on my own</p>
+          <br />
+          <h3>es</h3>
+          <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/chi.gif" width="50" loading="lazy" />
+          <p>He vivido 3 meses en Santiago de Chile para aprender español (empecé en A1 y terminé en cursando C1)</p>
+          <br />
+          <h3>de</h3>
+          <img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./images/ger.gif" width="50" loading="lazy" />
+          <p>Mein Deutsch ist kaputt aber ich will Deutsch sprachen</p>
+        </div>
+        <br />
+
+        <h2>Volunteering</h2>
+        <hr />
+        <h3>IT Manager and Developer @ <a href="https://www.ibasp.org.br" target="_blank">IBASP</a></h3>
+        <h3>IT Assistant @ <a href="https://www.compassiva.org.br" target="_blank">Compassiva</a></h3>
+        <h3>IT Assistant @ <a href="http://www.tabeacotia.com.br" target="_blank">Lar Criança Feliz de Cotia</a></h3>
+        <br />
+
         <h2>Projects</h2>
         <hr />
+        <!-- Deutschtrainer -->
+        <div class="project row justify-content-center align-items-center">
+            <div class="col-md-6">
+              <a>
+                <img
+                  class="websites-images lazy"
+                  loading="lazy"
+                  src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                  data-src="./images/under_construction.jpg"
+                  alt="Imagem de construção"
+                  width="540"
+                />
+              </a>
+            </div>
+            <div class="col-md-6">
+              <h3 class="my-2">
+                <a
+                  class="websites-titles"
+                >
+                  Deutschtrainer App
+                </a>
+              </h3>
+              <p class="websites-descriptions">
+                App to learn common phrases of German based on <a href="https://www.dw.com/pt-br/aprender-alemão/deutschtrainer-lektionen/s-47361512" target="_blank">Deutschtrainer by DW</a><br />
+                <br />
+                Under construction...
+              </p>
+              <img
+                class="lazy"
+                loading="lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./images/flutter.jpg"
+                width="100"
+                alt="Flutter logo"
+                title="Made with Flutter"
+              />
+            </div>
+          </div>
+          <hr />
+        <!-- RTM audios -->
+        <div class="project row justify-content-center align-items-center">
+          <div class="col-md-6">
+            <a href="https://www.transmundial.com.br/" target="_blank">
+              <img
+                class="websites-images lazy"
+                loading="lazy"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="https://image.thum.io/get/width/510/crop/700/https://www.transmundial.com.br/"
+                alt="Imagem do site da Rádio Trans Mundial"
+                width="540"
+              />
+            </a>
+          </div>
+          <div class="col-md-6">
+            <h3 class="my-2">
+              <a
+                class="websites-titles"
+                class=""
+                href="https://loja.transmundial.com.br/"
+                target="_blank"
+              >
+                RTM Website
+              </a>
+            </h3>
+            <p class="websites-descriptions">
+              Python crawler script to analyse all audio links and find broken ones<br /><br />
+              Problem solved: found 3094 broken links out of +11k and fixed all in 11 days
+            </p>
+            <img
+              class="lazy"
+              loading="lazy"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+              data-src="./images/python.jpg"
+              width="50"
+              alt="Python logo"
+              title="Made with Python"
+            />
+          </div>
+        </div>
+        <hr />
         <!-- Loja RTM -->
-        <div
-          class="project row justify-content-center align-items-center"
-          style="min-height: 50vh;"
-        >
+        <div class="project row justify-content-center align-items-center">
           <div class="col-md-6">
             <a href="https://loja.transmundial.com.br/" target="_blank">
               <img
                 class="websites-images lazy"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 data-src="https://image.thum.io/get/width/510/crop/700/https://loja.transmundial.com.br/"
                 alt="Imagem do site da Loja da Rádio Trans Mundial"
+                width="540"
               />
             </a>
           </div>
@@ -245,10 +412,12 @@
               </a>
             </h3>
             <p class="websites-descriptions">
-              A Woocommerce theme based on Storefront with custom CSS and JS
+              A Woocommerce theme based on Storefront with custom CSS and JS<br /><br />
+              Problem solved: automation of products tags, new layout and faster loading time
             </p>
             <img
               class="lazy"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               data-src="./images/woocommerce.jpg"
               width="175"
@@ -267,9 +436,11 @@
             >
               <img
                 class="websites-images lazy"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 data-src="https://image.thum.io/get/width/510/crop/700/https://www.kindergartenhanselgretel.com.br/"
                 alt="Imagem do site Kindergarten"
+                width="540"
               />
             </a>
           </div>
@@ -283,10 +454,12 @@
               >
             </h3>
             <p class="websites-descriptions">
-              A WordPress theme with custom front page and multilingual
+              A WordPress theme with custom front page and multilingual<br /><br />
+              Problem solved: compare the new and <a href="./kindergartenhanselgretel/old/index.html" target="_blank">old version</a>
             </p>
             <img
               class="lazy"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               data-src="./images/wordpress.jpg"
               width="100"
@@ -302,9 +475,11 @@
             <a href="https://www.jgoesodonto.com.br/" target="_blank">
               <img
                 class="websites-images lazy"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 data-src="https://image.thum.io/get/width/510/crop/700/https://www.jgoesodonto.com.br/"
-                alt="Imagem do site da IBASP"
+                alt="Imagem do site J & Góes Odonto"
+                width="540"
               />
             </a>
           </div>
@@ -318,10 +493,12 @@
               >
             </h3>
             <p class="websites-descriptions">
-              A simple website using CSS sprites
+              A simple website using CSS sprites<br /><br />
+              Problem solved: offered a no cost hosting solution and increased SEO for the company
             </p>
             <img
               class="lazy"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               data-src="./images/bootstrap.jpg"
               width="150"
@@ -337,9 +514,11 @@
             <a href="https://www.ibasp.org.br/" target="_blank">
               <img
                 class="websites-images lazy"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 data-src="https://image.thum.io/get/width/510/crop/700/https://www.ibasp.org.br/"
                 alt="Imagem do site da IBASP"
+                width="540"
               />
             </a>
           </div>
@@ -353,11 +532,12 @@
               >
             </h3>
             <p class="websites-descriptions">
-              A WordPress theme with custom front page, events, SEO and
-              notifications
+              A WordPress theme with custom front page, events, SEO and notifications<br /><br />
+              Problem solved: migrated from Wix to their own website with all included (minimize hosting cost, create database and optimize website)
             </p>
             <img
               class="lazy"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               data-src="./images/wordpress.jpg"
               width="100"
@@ -376,9 +556,11 @@
             >
               <img
                 class="websites-images lazy"
+                loading="lazy"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
                 data-src="https://image.thum.io/get/width/510/crop/700/https://www.ralomach.com.br/react-youtube-search/"
                 alt="Imagem do app de pesquisa do Youtube"
+                width="540"
               />
             </a>
           </div>
@@ -391,9 +573,11 @@
                 >Youtube Search App</a
               >
             </h3>
-            <p class="websites-descriptions">A fast and clean YouTube player</p>
+            <p class="websites-descriptions">A fast and clean YouTube player<br /><br />
+              Problem solved: me trying to learn React</p>
             <img
               class="lazy"
+              loading="lazy"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
               data-src="./images/react.jpg"
               width="100"
@@ -404,7 +588,10 @@
         </div>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@11.0.6/dist/lazyload.min.js"></script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <script>
       var lazyLoadInstance = new LazyLoad({
         elements_selector: ".lazy"
