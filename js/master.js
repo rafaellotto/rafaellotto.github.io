@@ -114,7 +114,7 @@ const projectsList = [
 		name: "PD23 PWA",
 		description: `A progressive web app for the most accessed devotional of RTM
 		<br /><br />
-		Problem solved: with this web app, the users can install it on their mobile and even use it offline`,
+		Problem solved: with this web app, users can install it on their mobile and even use it offline`,
 		url: "https://www.transmundial.com.br/pd23/",
 		img: "https://image.thum.io/get/width/510/crop/700/https://www.transmundial.com.br/pd23/",
 		imgAlt: "PD23 website thumbnail",
