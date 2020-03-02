@@ -7,6 +7,12 @@ const educationList = [
 		period: "Dez/2019-Mar/2020"
 	},
 	{
+		name: "Design for Web",
+		school: "Senac",
+		schoolLink: "https://www.sp.senac.br/",
+		period: "Feb-Apr/2019"
+	},
+	{
 		name: "Front End Development",
 		school: "FreeCodeCamp",
 		schoolLink: "https://www.freecodecamp.org/",
