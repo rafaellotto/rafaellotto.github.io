@@ -65,7 +65,7 @@ hr {
 #certifications {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
 }
 .project {
 	min-height: 50vh;
