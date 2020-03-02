@@ -74,7 +74,7 @@ certificationsList.forEach(certification => {
 		<h3 class="my-2">
 			<span style="display: none">${certification.courseName}</span>
 			<a href="${certification.url}" target="_blank" title="${certification.courseName}">
-				<img class="lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="${certification.img}" alt="${certification.courseName} Certification" style="width: 100%; max-width: 350px; border: 1px solid #eee;" />
+				<img class="lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="${certification.img}" width="350" alt="${certification.courseName} Certification" style="width: 100%; max-width: 350px; border: 1px solid #eee;" />
 			</a>
 		</h3>
 	</div>`;
