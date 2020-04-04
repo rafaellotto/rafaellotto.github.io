@@ -47,6 +47,11 @@ educationList.forEach(item => {
 //Certifications
 const certificationsList = [
 	{
+		courseName: "Full-stack PHP Developer @ UpInside",
+		img: "./images/phpfsdeveloper_cert.png",
+		url: "https://www.ralomach.com.br/images/phpfsdeveloper_cert.pdf",
+	},
+	{
 		courseName: "Data Visualization @ freeCodeCamp",
 		img: "./images/data_cert.png",
 		url: "https://www.freecodecamp.org/certification/ralomach/data-visualization",
