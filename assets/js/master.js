@@ -101,7 +101,7 @@ const certificationsList = [
 	{
 		courseName: "Design for Web - Production and Creation @ Senac",
 		img: "./assets/certificates/senac-designweb.png",
-		url: "https://www.ralomach.com.br/images/senac_cert.pdf",
+		url: "https://www.ralomach.com.br/assets/certificates/senac-designweb.pdf",
 	},
 ];
 
