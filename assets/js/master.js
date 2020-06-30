@@ -160,6 +160,19 @@ const projectsList = [
 		},
 	},
 	{
+		name: "RTM Bible Courses",
+		description: "Custom learning management system for RTM listeners",
+		url: "https://cursos.transmundial.com.br",
+		img: "./assets/images/screenshot-cursosrtm.png",
+		imgAlt: "RTM Bible Courses",
+		builtWith: {
+			title: "PHP",
+			logo: "./assets/images/php.png",
+			alt: "Made with PHP",
+			width: 100,
+		},
+	},
+	{
 		name: "Be The Hero",
 		description:
 			'Application "Be The Hero" <br/><br/> Problem solved: For NGO organizations to get help/funds for their needs',
