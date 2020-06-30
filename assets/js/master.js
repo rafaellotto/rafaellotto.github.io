@@ -161,7 +161,7 @@ const projectsList = [
 	},
 	{
 		name: "RTM Bible Courses",
-		description: "Custom learning management system for RTM listeners",
+		description: "Custom learning management system for RTM listeners <br /><br /> Problem solved: automatic users registration, users grade and certificates issuing",
 		url: "https://cursos.transmundial.com.br",
 		img: "./assets/images/screenshot-cursosrtm.png",
 		imgAlt: "RTM Bible Courses",
@@ -169,7 +169,7 @@ const projectsList = [
 			title: "PHP",
 			logo: "./assets/images/php.png",
 			alt: "Made with PHP",
-			width: 100,
+			width: 75,
 		},
 	},
 	{
