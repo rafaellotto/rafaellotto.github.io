@@ -47,12 +47,14 @@ const educationList = [
 const educationSection = document.querySelector("#education");
 
 educationList.forEach((item) => {
-	educationSection.innerHTML += `<h3>
-		${item.name}<br />
-		<small>
-			@ <a href="${item.schoolLink}" target="_blank">${item.school}</a> ( ${item.period} )
-		</small>
-		</h3>`;
+	var newItem = document.createElement('h3');
+
+	newItem.innerHTML = `${item.name}<br />
+	<small>
+		@ <a href="${item.schoolLink}" target="_blank">${item.school}</a> ( ${item.period} )
+	</small>`;
+
+	educationSection.append(newItem);
 });
 
 //Certifications
@@ -64,63 +66,58 @@ const certificationsList = [
 	},
 	{
 		courseName: "Emotional Inteligence @ Conquer",
-		img: "./assets/certificates/conquer-ie.png",
-		url: "https://www.ralomach.com.br/assets/certificates/conquer-ie.pdf",
+		img: "/assets/certificates/conquer-ie.png",
+		url: "/assets/certificates/conquer-ie.pdf",
 	},
 	{
 		courseName: "OmniStack 11 @ Rocketseat",
-		img: "./assets/certificates/rocketseat-omnistack11.png",
-		url:
-			"https://www.ralomach.com.br/assets/certificates/rocketseat-omnistack11.pdf",
+		img: "/assets/certificates/rocketseat-omnistack11.png",
+		url: "/assets/certificates/rocketseat-omnistack11.pdf",
 	},
 	{
 		courseName: "Full-stack PHP Developer @ UpInside",
-		img: "./assets/certificates/upinside-phpfullstack.png",
-		url:
-			"https://www.ralomach.com.br/assets/certificates/upinside-phpfullstack.pdf",
+		img: "/assets/certificates/upinside-phpfullstack.png",
+		url: "/assets/certificates/upinside-phpfullstack.pdf",
 	},
 	{
 		courseName: "Data Visualization @ freeCodeCamp",
-		img: "./assets/certificates/freecodecamp-data.png",
-		url:
-			"https://www.freecodecamp.org/certification/ralomach/data-visualization",
+		img: "/assets/certificates/freecodecamp-data.png",
+		url: "https://www.freecodecamp.org/certification/ralomach/data-visualization",
 	},
 	{
 		courseName: "Front End Libraries @ freeCodeCamp",
-		img: "./assets/certificates/freecodecamp-frontend.png",
-		url:
-			"https://www.freecodecamp.org/certification/ralomach/front-end-libraries",
+		img: "/assets/certificates/freecodecamp-frontend.png",
+		url: "https://www.freecodecamp.org/certification/ralomach/front-end-libraries",
 	},
 	{
 		courseName: "Javascript Algorithms and Data Structures @ freeCodeCamp",
-		img: "./assets/certificates/freecodecamp-javascript.png",
-		url:
-			"https://www.freecodecamp.org/certification/ralomach/javascript-algorithms-and-data-structures",
+		img: "/assets/certificates/freecodecamp-javascript.png",
+		url: "https://www.freecodecamp.org/certification/ralomach/javascript-algorithms-and-data-structures",
 	},
 	{
 		courseName: "Responsive Web Design @ freeCodeCamp",
-		img: "./assets/certificates/freecodecamp-responsive.png",
-		url:
-			"https://www.freecodecamp.org/certification/ralomach/responsive-web-design",
+		img: "/assets/certificates/freecodecamp-responsive.png",
+		url: "https://www.freecodecamp.org/certification/ralomach/responsive-web-design",
 	},
 	{
 		courseName: "Design for Web - Production and Creation @ Senac",
-		img: "./assets/certificates/senac-designweb.png",
-		url: "https://www.ralomach.com.br/assets/certificates/senac-designweb.pdf",
+		img: "/assets/certificates/senac-designweb.png",
+		url: "/assets/certificates/senac-designweb.pdf",
 	},
 ];
 
 const certificationsSection = document.querySelector("#certifications");
 
 certificationsList.forEach((certification) => {
-	certificationsSection.innerHTML += `<div class="certification">
-		<h3 class="my-2">
-			<span style="display: none">${certification.courseName}</span>
-			<a href="${certification.url}" target="_blank" title="${certification.courseName}">
-				<img class="lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="${certification.img}" width="350" alt="${certification.courseName} Certification" style="width: 100%; max-width: 350px; border: 1px solid #eee;" />
-			</a>
-		</h3>
-	</div>`;
+	var newItem = document.createElement('h3');
+	newItem.classList.add('my-2');
+
+	newItem.innerHTML = `<span style="display: none">${certification.courseName}</span>
+		<a href="${certification.url}" target="_blank" title="${certification.courseName}">
+			<img class="lazy" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="${certification.img}" width="350" alt="${certification.courseName} Certification" style="width: 100%; max-width: 350px; border: 1px solid #eee;" />
+		</a>`;
+
+	certificationsSection.append(newItem);
 });
 
 //Skills
@@ -145,7 +142,10 @@ const skillsList = [
 const skillSection = document.querySelector("#skills");
 
 skillsList.forEach((skill) => {
-	skillSection.innerHTML += `<h3>${skill}</h3>`;
+	var newItem = document.createElement('h3');
+	newItem.innerText = skill;
+
+	skillSection.append(newItem);
 });
 
 //Projects
