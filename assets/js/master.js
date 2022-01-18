@@ -1,10 +1,10 @@
 //Education
 const educationList = [
 	{
-		name: "GoStack Bootcamp",
-		school: "Rocketseat",
-		schoolLink: "https://rocketseat.com.br/",
-		period: "In progress",
+		name: "Flutter Development Bootcamp",
+		school: "Udemy",
+		schoolLink: "https://www.udemy.com/course/flutter-bootcamp-with-dart/",
+		period: "Jun/2021",
 	},
 	{
 		name: "Emotional Inteligence",
@@ -57,6 +57,11 @@ educationList.forEach((item) => {
 
 //Certifications
 const certificationsList = [
+	{
+		courseName: "Flutter Development Bootcamp @ Udemy",
+		img: "/assets/certificates/flutter.png",
+		url: "/assets/certificates/flutter.pdf",
+	},
 	{
 		courseName: "Emotional Inteligence @ Conquer",
 		img: "./assets/certificates/conquer-ie.png",
@@ -121,8 +126,8 @@ certificationsList.forEach((certification) => {
 //Skills
 const skillsList = [
 	"Bootstrap",
-	"CodeIgniter",
 	"CSS",
+	"Flutter",
 	"Gulp",
 	"HTML",
 	"JavaScript",
@@ -134,7 +139,6 @@ const skillsList = [
 	"PWA",
 	"Python",
 	"ReactJS",
-	"React Native",
 	"SQL",
 ];
 
