@@ -170,9 +170,9 @@ const projectsList = [
 		img: "./images/screenshot-cursosrtm.png",
 		imgAlt: "RTM Bible Courses",
 		builtWith: {
-			title: "PHP",
-			logo: "./images/php.png",
-			alt: "Made with PHP",
+			title: "Laravel",
+			logo: "./images/laravel.png",
+			alt: "Made with Laravel",
 			width: 75,
 		},
 	},
