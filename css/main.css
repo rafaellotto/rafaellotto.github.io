@@ -49,7 +49,7 @@ a:link, a:visited {
 .icons {
 	width: 100%;
 	height: 100%;
-	background-image: url("/assets/images/icons.jpg");
+	background-image: url("/images/icons.jpg");
 	background-repeat: no-repeat;
 }
 
