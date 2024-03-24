@@ -1,6 +1,12 @@
 <?php
 $projects = [
     [
+        'title' => 'Pokedex',
+        'url' => 'https://pokemon-vue.rafaellotto.com.br',
+        'launched_at' => 'March/2024',
+        'tags' => ['Vue.js'],
+    ],
+    [
         'title' => 'Personal Finances website',
         'url' => 'https://controle-financeiro.rafaellotto.com.br',
         'launched_at' => 'January/2024',
